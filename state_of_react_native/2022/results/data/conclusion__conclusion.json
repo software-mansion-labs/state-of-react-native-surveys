@@ -1,0 +1,16 @@
+{
+  "internalAPI": {
+    "entities": [
+      {
+        "id": "lea_verou",
+        "name": "Lea Verou",
+        "homepage": {
+          "name": "https://lea.verou.me/",
+          "url": "https://lea.verou.me/"
+        },
+        "twitterName": "leaverou",
+        "twitter": null
+      }
+    ]
+  }
+}
