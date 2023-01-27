@@ -5,7 +5,19 @@
         "entity": {
           "name": "Locale"
         },
-        "keys": [],
+        "keys": [
+          "en-US",
+          "fr-FR",
+          "pt-BR",
+          "es-ES",
+          "pl-PL",
+          "tr-TR",
+          "de-DE",
+          "ru-RU",
+          "ja",
+          "uk-UA",
+          "zh-CN"
+        ],
         "all_years": [
           {
             "year": 2022,
