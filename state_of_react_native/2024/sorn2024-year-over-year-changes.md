@@ -661,6 +661,15 @@ What UI components libraries do you regularly use in your React Native apps?
 
 What graphics and animations solutions do you use in your React Native apps?
 
+> [!WARNING]
+> TODO: add `@example` showcasing the most prominent example from the library (up to 4 lines of code if possible)
+
+> [!WARNING]
+> TODO: inspect if we have some `@author`/`@creator` tag in the YAML configuration to indicate the origins of the solution. At this point we show creator in the braces, but it would be nicer to have it separated from the name of the solution.
+
+> [!WARNING]
+> TODO: research the Web in order to find new libraries
+
 ### 🤷 / ✅ / 🚫 / 👍 / 👎 questions
 
 > **(_radio buttons_)**
@@ -679,17 +688,25 @@ What graphics and animations solutions do you use in your React Native apps?
   > **(_separate question below_)**
   - Other answers (freeform)
 
-### Overall happiness
+```diff
+- ### Overall happiness
 
-How do you feel about the current overall state of graphics and animations solutions available for React Native?
+- How do you feel about the current overall state of graphics and animations solutions available for React Native?
 
-> **(_radio buttons_)**
+- > **(_radio buttons_)**
 
 - Very Unhappy
 - Unhappy
 - Neutral
 - Happy
 - Very Happy
+
++ ### Graphics and animations pain points
+
++ What pain points have you encountered with graphics and animations in your React Native projects? If applicable, point out the specific solution and its problems.
+
+> **(_freeform input_)**
+```
 
 ---
 
