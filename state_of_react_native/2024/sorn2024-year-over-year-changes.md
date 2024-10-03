@@ -501,6 +501,9 @@ What data fetching solutions do you regularly use in your React Native apps?
 
 What navigation solutions do you regularly use in your React Native apps?
 
+> [!WARNING]
+> TODO: inspect if we have some `@author`/`@creator` tag in the YAML configuration to indicate the origins of the solution. At this point we show creator in the braces, but it would be nicer to have it separated from the name of the solution.
+
 ### 🤷 / ✅ / 🚫 / 👍 / 👎 questions
 
 > **(_radio buttons_)**
@@ -515,17 +518,25 @@ What navigation solutions do you regularly use in your React Native apps?
   > **(_separate question below_)**
   - Other answers (freeform)
 
-### Overall happiness
+```diff
+- ### Overall happiness
 
-How do you feel about the current overall state of navigation solutions available for React Native?
+- How do you feel about the current overall state of navigation solutions available for React Native?
 
-> **(_radio buttons_)**
+- > **(_radio buttons_)**
 
 - Very Unhappy
 - Unhappy
 - Neutral
 - Happy
 - Very Happy
+
++ ### Navigation pain points
+
++ What pain points have you encountered with navigation in your React Native projects? If applicable, point out the specific solution and its problems.
+
+> **(_freeform input_)**
+```
 
 ---
 
