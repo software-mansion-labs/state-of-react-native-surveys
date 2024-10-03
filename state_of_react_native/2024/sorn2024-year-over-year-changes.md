@@ -544,6 +544,12 @@ What navigation solutions do you regularly use in your React Native apps?
 
 What styling techniques do you regularly use in your React Native apps?
 
+> [!WARNING]
+> TODO: inspect if we have some `@author`/`@creator` tag in the YAML configuration to indicate the origins of the solution. At this point we show creator in the braces, but it would be nicer to have it separated from the name of the solution.
+
+> [!WARNING]
+> TODO: add `@example` with up to 3/4 code lines showcasing the solution syntax, take the most up-to-date versions of the libraries to demonstrate the syntax.
+
 ### 🤷 / ✅ / 🚫 / 👍 / 👎 questions
 
 > **(_radio buttons_)**
@@ -556,7 +562,9 @@ What styling techniques do you regularly use in your React Native apps?
 
 - Dripsy (by Fernando Rojo)
 - Emotion
-- Fast Styles (by Fede Martín)
+```diff
+- Fast Styles (by Fede Martín) # too niche
+```
 - gluestack-style
 - Inline styling
 - NativeWind (by Mark Lawlor)
@@ -567,22 +575,32 @@ What styling techniques do you regularly use in your React Native apps?
 - tailwind-rn (by Vadim Demedes)
 - Tailwind React Native Classnames (twrnc) (by Jared Henderson)
 - Tamagui (by Nate Wienert)
-- React Native Zephyr (by Formidable)
+```diff
+- React Native Zephyr (by Formidable) # too niche
+```
 - Other styling techniques
   > **(_separate question below_)**
   - Other answers (freeform)
 
-### Overall happiness
+```diff
+- ### Overall happiness
 
-How do you feel about the current overall state of styling techniques available for React Native?
+- How do you feel about the current overall state of styling techniques available for React Native?
 
-> **(_radio buttons_)**
+- > **(_radio buttons_)**
 
 - Very Unhappy
 - Unhappy
 - Neutral
 - Happy
 - Very Happy
+
++ ### Styling pain points
+
++ What pain points have you encountered with styling in your React Native projects? If applicable, point out the specific solution and its problems.
+
+> **(_freeform input_)**
+```
 
 ---
 
