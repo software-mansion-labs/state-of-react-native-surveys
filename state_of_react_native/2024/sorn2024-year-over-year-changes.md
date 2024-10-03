@@ -332,7 +332,10 @@ The features provided by the operation system.
 
 ### Platform APIs usage
 
-What Platform APIs have you used in 2022 in React Native? Check all that apply
+```diff
+- What Platform APIs have you used in 2022 in React Native? Check all that apply
++ What Platform APIs have you used in 2024 in React Native? Check all that apply
+```
 
 > **(_multiselect checkbox_)**
 
@@ -379,6 +382,16 @@ What Platform APIs have you used in 2022 in React Native? Check all that apply
 - Other platform APIs usage
   > **(_separate question below_)**
   - Other answers (freeform)
+
+```diff
+
++ ### Platform APIs pain points
+
++ What pain points have you encountered related to the APIs mentioned above? Specify the individual API if applicable.
+
++ **(_freeform input_)**
+
+```
 
 ---
 
