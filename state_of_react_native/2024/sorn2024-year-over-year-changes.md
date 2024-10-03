@@ -214,7 +214,10 @@ What are the platforms that you use React Native for? Check all that apply
 
 ### Contribution to React Native
 
-Have you contributed to React Native upstream in 2023 (commits/PRs)?
+```diff
+- Have you contributed to React Native upstream in 2023 (commits/PRs)?
++ Have you contributed to React Native upstream in 2024 (commits/PRs)?
+```
 
 > **(_radio buttons_)**
 
@@ -223,7 +226,10 @@ Have you contributed to React Native upstream in 2023 (commits/PRs)?
 
 ### Open Source Contribution to React Native libraries
 
-Have you contributed to any Open Source React Native library in 2023 (commits/PRs)?
+```diff
+- Have you contributed to any Open Source React Native library in 2023 (commits/PRs)?
++ Have you contributed to any Open Source React Native library in 2024 (commits/PRs)?
+```
 
 > **(_radio buttons_)**
 
@@ -232,8 +238,10 @@ Have you contributed to any Open Source React Native library in 2023 (commits/PR
 
 ### Number of released apps
 
-How many React Native apps have you released on Google Play or App Store?
-
+```diff
+- How many React Native apps have you released on Google Play or App Store?
++ How many React Native apps have you published to the app stores?
+```
 > **(_radio buttons_)**
 
 - None
@@ -246,10 +254,23 @@ How many React Native apps have you released on Google Play or App Store?
 
 > **(_radio buttons_)**
 
+> [!WARNING]
+> https://gs.statcounter.com/ios-version-market-share
+> https://gs.statcounter.com/os-version-market-share/android
+> https://apilevels.com/
+> https://github.com/search?q=repo%3Afacebook%2Freact-native+min_ios_version_supported&type=code
+> https://github.com/search?q=repo%3Afacebook%2Freact-native+minSdkVersion&type=code
+
+```diff
 - Most recent ones (iOS 17+, Android 14+)
 - Reasonably current (iOS 15+, Android 12+) <!-- versions 2/3 years old that are still supported -->
 - Old (iOS 12+, Android 9+) <!-- older versions that might not be supported, but are still part of the market -->
-- As old as possible (iOS 8+, Android 5+) <!-- versions that theoretically could be used with React Native (the very old version of React Native) -->
++ The most recent versions (iOS 18+, Android 15+)
++ Reasonably current (iOS 17+, Android 13+) <!--  -->
++ Old (iOS 14+, Android 9+) <!-- https://github.com/react-native-community/discussions-and-proposals/discussions/812 -->
+```
++ As old as possible (iOS 8+, Android 5+) <!-- versions that theoretically could be used with React Native (the very old version of React Native) -->
+
 
 ### Industry sector
 
