@@ -454,6 +454,11 @@ What state management solutions do you regularly use in your React Native apps?
 
 What data fetching solutions do you regularly use in your React Native apps?
 
+> [!WARNING]
+> TODO: revise the list and remove all solutions that are not primarily designed for data fetching
+>
+> TODO: add comments about why some technology gets removed
+
 ### 🤷 / ✅ / 🚫 / 👍 / 👎 questions
 
 > **(_radio buttons_)**
@@ -470,17 +475,25 @@ What data fetching solutions do you regularly use in your React Native apps?
   > **(_separate question below_)**
   - Other answers (freeform)
 
-### Overall happiness
+```diff
+- ### Overall happiness
 
-How do you feel about the current overall state of data fetching solutions available for React Native?
+- How do you feel about the current overall state of data fetching solutions available for React Native?
 
-> **(_radio buttons_)**
+- > **(_radio buttons_)**
 
 - Very Unhappy
 - Unhappy
 - Neutral
 - Happy
 - Very Happy
+
++ ### Data fetching pain points
+
++ What pain points have you encountered with data fetching in your React Native projects? If applicable, point out the specific solution and its problems.
+
+> **(_freeform input_)**
+```
 
 ---
 
