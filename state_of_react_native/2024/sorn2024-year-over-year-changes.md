@@ -608,6 +608,15 @@ What styling techniques do you regularly use in your React Native apps?
 
 What UI components libraries do you regularly use in your React Native apps?
 
+> [!WARNING]
+> TODO: inspect if we have some `@author`/`@creator` tag in the YAML configuration to indicate the origins of the solution. At this point we show creator in the braces, but it would be nicer to have it separated from the name of the solution.
+
+> [!WARNING]
+> TODO: add `@example` code with importing 3,4 components from the library module.
+
+> [!WARNING]
+> TODO: research the Web in order to find new libraries
+
 ### 🤷 / ✅ / 🚫 / 👍 / 👎 questions
 
 > **(_radio buttons_)**
@@ -626,9 +635,10 @@ What UI components libraries do you regularly use in your React Native apps?
   > **(_separate question below_)**
   - Other answers (freeform)
 
-### Overall happiness
+```diff
+- ### Overall happiness
 
-How do you feel about the current overall state of UI components libraries available for React Native?
+- How do you feel about the current overall state of UI components libraries available for React Native?
 
 > **(_radio buttons_)**
 
@@ -637,6 +647,13 @@ How do you feel about the current overall state of UI components libraries avail
 - Neutral
 - Happy
 - Very Happy
+
++ ### UI Components libraries pain points
+
++ What pain points have you encountered with UI components libraries in your React Native projects? If applicable, point out the specific solution and its problems.
+
+> **(_freeform input_)**
+```
 
 ---
 
