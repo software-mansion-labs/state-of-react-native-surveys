@@ -386,6 +386,11 @@ What Platform APIs have you used in 2022 in React Native? Check all that apply
 
 What state management solutions do you regularly use in your React Native apps?
 
+> [!WARNING]
+> TODO: revise the list and remove all solutions that are not primarily designed for state management
+>
+> TODO: add comments about why some technology gets removed
+
 ### 🤷 / ✅ / 🚫 / 👍 / 👎 questions
 
 > **(_radio buttons_)**
@@ -394,7 +399,10 @@ What state management solutions do you regularly use in your React Native apps?
 - Jotai
 - MobX
 - MobX-State-Tree
+```diff
 - React (useState, useReducer, useContext, this.state)
++ React built-ins (useState, useContext, etc.)
+```
 - Recoil
 - Redux
 - Redux Toolkit
@@ -405,17 +413,27 @@ What state management solutions do you regularly use in your React Native apps?
   > **(_separate question below_)**
   - Other answers (freeform)
 
-### Overall happiness
+```diff
+- ### Overall happiness
 
-How do you feel about the current overall state of state management solutions available for React Native?
+- How do you feel about the current overall state of state management solutions available for React Native?
 
-> **(_radio buttons_)**
+- > **(_radio buttons_)**
 
 - Very Unhappy
 - Unhappy
 - Neutral
 - Happy
 - Very Happy
+
++ ### State management pain points
+
++ What pain points have you encountered with state management in your React Native projects? If applicable, point out the specific solution and its problems.
+
+> **(_freeform input_)**
+```
+
+> **(_freeform input_)**
 
 ---
 
