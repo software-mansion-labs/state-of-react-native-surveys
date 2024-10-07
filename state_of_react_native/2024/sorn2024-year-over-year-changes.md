@@ -1242,19 +1242,24 @@ Which version do you use mainly?
 
 > **(_radio buttons_)**
 
-- nightly
-- next
-- 0.73
-- 0.72
-- 0.71
-- 0.70
-- 0.69
-- 0.68
-- 0.67
-- 0.66
-- 0.65
-- 0.64
-- 0.63 or lower
+```
+nightly
+next
++ 0.76
++ 0.75
++ 0.74
+0.73
+0.72
+0.71
+0.70
+0.69
+0.68
+0.67
+0.66
+0.65
+0.64
+0.63 or lower
+```
 
 ### React Native version upgrade strategy
 
@@ -1339,16 +1344,45 @@ How do you build and submit your app for the App Store or Google Play?
 
 > **(_radio buttons_)**
 
-- App Center
-- Bitrise
-- EAS Build
-- EAS Submit
-- Fastlane
-- Manually with Android Studio
-- Manually with Xcode
-- Other ways to build app and submit for the App Store or Google Play
+```diff
+App Center
++ @website: https://appcenter.ms/
++ @github: https://github.com/microsoft/appcenter
++ @author: [@microsoft](https://github.com/microsoft)
+
+Bitrise
++ @website: https://www.bitrise.io/
++ @github: https://github.com/bitrise-io/bitrise
++ @author: [@bitrise-io](https://github.com/bitrise-io)
+
+EAS Build
++ @website: https://docs.expo.dev/build/introduction/
++ @author: [@expo](https://github.com/expo)
+
+EAS Submit
++ @website: https://docs.expo.dev/submit/introduction/
++ @author: [@expo](https://github.com/expo)
+
+Fastlane
++ @website: https://fastlane.tools/
++ @github: https://github.com/fastlane/fastlane
++ @author: [@fastlane](https://github.com/fastlane)
+
+Manually with Android Studio
+
+Manually with Xcode
+
+Other ways to build app and submit for the App Store or Google Play
   > **(_separate question below_)**
   - Other answers (freeform)
+
++ ### Deployment pain points
+
++ What pain points have you encountered with deployment in your React Native projects? If applicable, point out the specific solution and its problems.
+
+> **(_freeform input_)**
+
+```
 
 ---
 
