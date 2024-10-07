@@ -923,16 +923,39 @@ Check all that apply
 
 > **(_multiselect checkbox_)**
 
-- Amplify Analytics
-- Amplitude
-- AppCenter Analytics
-- AppsFlyer
-- Firebase Analytics
-- Mixpanel
-- Segment
-- Other analytics solutions
+```diff
+Amplify Analytics
++ @website: https://docs.amplify.aws/react-native/
+
+Amplitude
++ @website: https://amplitude.com/
+
+AppCenter Analytics
++ @website: https://learn.microsoft.com/en-us/appcenter/sdk/getting-started/react-native
+
+AppsFlyer
++ @website: https://www.appsflyer.com/
+
+Firebase Analytics
++ @website: https://firebase.google.com/products/analytics
+
+Mixpanel
++ @website: https://mixpanel.com/
+
+Segment
++ @website: https://segment.com/
+
+Other analytics solutions
   > **(_separate question below_)**
   - Other answers (freeform)
+
++ ### Analytics pain points
+
++ What pain points have you encountered with analytics in your React Native projects? If applicable, point out the specific solution and its problems.
+
+> **(_freeform input_)**
+
+```
 
 ### Crash reporting
 
@@ -940,16 +963,39 @@ Check all that apply
 
 > **(_multiselect checkbox_)**
 
-- AppCenter Crashes
-- Bugsnag
-- Datadog
-- Firebase Crashlytics
-- Instabug
-- New Relic
-- Sentry
-- Other crash reporting solutions
+```diff
+AppCenter Crashes
++ @website: https://learn.microsoft.com/en-us/appcenter/sdk/crashes/react-native
+
+Bugsnag
++ @website: https://www.bugsnag.com/
+
+Datadog
++ @website: https://www.datadoghq.com/
+
+Firebase Crashlytics
++ @website: https://firebase.google.com/products/crashlytics
+
+Instabug
++ @website: https://instabug.com/
+
+New Relic
++ @website: https://newrelic.com/
+
+Sentry
++ @website: https://sentry.io/
+
+Other crash reporting solutions
   > **(_separate question below_)**
   - Other answers (freeform)
+
++ ### Crash reporting pain points
+
++ What pain points have you encountered with crash reporting in your React Native projects? If applicable, point out the specific solution and its problems.
+
+> **(_freeform input_)**
+
+```
 
 ### Data visualisation
 
@@ -957,13 +1003,35 @@ Check all that apply
 
 > **(_multiselect checkbox_)**
 
-- React Native Charts Kit
-- react-native-svg (by Software Mansion)
-- Recharts
-- Victory Native (by Formidable)
-- Other data visualisation solutions
+```diff
+`react-native-chart-kit`
++ @github: https://github.com/indiespirit/react-native-chart-kit
++ @author: [@indiespirit](https://github.com/indiespirit)
+
+`react-native-svg`
++ @github: https://github.com/software-mansion/react-native-svg
++ @author: [@software-mansion](https://github.com/software-mansion)
+
+Recharts
++ @website: https://recharts.org/en-US/
++ @github: https://github.com/recharts/recharts
+
+`victory-native`
++ @website: https://formidable.com/open-source/victory-native/
++ @github: https://github.com/FormidableLabs/victory-native
++ @author: [@FormidableLabs](https://github.com/FormidableLabs)
+
+Other data visualisation solutions
   > **(_separate question below_)**
   - Other answers (freeform)
+
++ ### Data visualisation pain points
+
++ What pain points have you encountered with data visualisation in your React Native projects? If applicable, point out the specific solution and its problems.
+
+> **(_freeform input_)**
+
+```
 
 ### Storage
 
@@ -971,16 +1039,47 @@ Check all that apply
 
 > **(_multiselect checkbox_)**
 
-- Expo SQLite
-- React Native Async Storage
-- react-native-mmkv (by Marc Rousavy)
-- react-native-mmkv-storage (by Ammar Ahmed)
-- React Native SQLite Storage (by Andrzej Porebski)
-- Realm (by MongoDB)
-- WatermelonDB (by Nozbe)
-- Other storage solutions
+```diff
+Expo SQLite
++ @website: https://docs.expo.dev/versions/latest/sdk/sqlite/
++ @author: [@expo](https://github.com/expo)
+
+React Native Async Storage
++ @github: https://github.com/react-native-async-storage/async-storage
+
+`react-native-mmkv`
++ @github: https://github.com/mrousavy/react-native-mmkv
++ @author: [@mrousavy](https://github.com/mrousavy)
+
+`react-native-mmkv-storage`
++ @github: https://github.com/ammarahm-ed/react-native-mmkv-storage
++ @author: [@ammarahm-ed](https://github.com/ammarahm-ed)
+
+`react-native-sqlite-storage`
++ @github: https://github.com/andpor/react-native-sqlite-storage
++ @author: [@andpor](https://github.com/andpor)
+
+Realm
++ @website: https://realm.io/
++ @github: https://github.com/realm/realm-js
++ @author: [@MongoDB](https://www.mongodb.com/)
+
+WatermelonDB
++ @website: https://watermelondb.dev
++ @github: https://github.com/Nozbe/WatermelonDB
++ @author: [@Nozbe](https://github.com/Nozbe)
+
+Other storage solutions
   > **(_separate question below_)**
   - Other answers (freeform)
+
++ ### Storage pain points
+
++ What pain points have you encountered with storage in your React Native projects? If applicable, point out the specific solution and its problems.
+
+> **(_freeform input_)**
+
+```
 
 ### Testing
 
@@ -988,15 +1087,48 @@ Check all that apply
 
 > **(_multiselect checkbox_)**
 
-- Appium
-- Detox
-- Jest
-- Maestro
-- React Native Testing Library
-- Storybook
-- Other testing solutions
+```diff
+Appium
++ @website: https://appium.io/
++ @github: https://github.com/appium/appium
++ @author: [@appium](https://github.com/appium)
+
+Detox
++ @website: https://github.com/wix/Detox
++ @github: https://github.com/wix/Detox
++ @author: [@wix](https://github.com/wix)
+
+Jest
++ @website: https://jestjs.io/
++ @github: https://github.com/jestjs/jest
++ @author: [@OpenJSFoundation](https://openjsf.org/)
+
+Maestro
++ @website: https://maestro.mobile.dev/
++ @github: https://github.com/mobile-dev-inc/maestro
++ @author: [@mobile-dev-inc](https://github.com/mobile-dev-inc)
+
+React Native Testing Library
++ @website: https://callstack.github.io/react-native-testing-library/
++ @github: https://github.com/callstack/react-native-testing-library
++ @author: [@callstack](https://github.com/callstack)
+
+Storybook
++ @website: https://storybook.js.org/
++ @github: https://github.com/storybookjs/react-native
++ @author: [@storybookjs](https://github.com/storybookjs)
+
+Other testing solutions
   > **(_separate question below_)**
   - Other answers (freeform)
+
++ ### Testing pain points
+
++ What pain points have you encountered with testing in your React Native projects? If applicable, point out the specific solution and its problems.
+
+> **(_freeform input_)**
+
+```
 
 ### Other popular libraries
 
@@ -1007,24 +1139,90 @@ Check all that apply
 > [!WARNING]
 > TODO: sort the available options
 
-- @expo/vector-icons
-- @gorhom/bottom-sheet (by Mo Gorhom)
-- @shopify/flash-list
-- expo-image
-- i18next
-- react-native-camera
-- react-native-fast-image
-- react-native-gesture-handler (by Software Mansion)
-- react-native-localize (by Mathieu Acthernoene)
-- react-native-maps
-- react-native-safe-area-context
-- react-native-webview
-- react-native-vector-icons
-- react-native-video
-- react-native-vision-camera (by Marc Rousavy)
-- Other popular libraries not listed above
+```diff
+@expo/vector-icons
++ @website: https://docs.expo.dev/guides/icons/
++ @github: https://github.com/expo/vector-icons
++ @author: [@expo](https://github.com/expo)
+
+@gorhom/bottom-sheet
++ @website: https://gorhom.github.io/react-native-bottom-sheet/
++ @github: https://github.com/gorhom/react-native-bottom-sheet
++ @author: [@gorhom](https://github.com/gorhom)
+
+@shopify/flash-list
++ @website: https://shopify.github.io/flash-list/
++ @github: https://github.com/shopify/flash-list
++ @author: [@shopify](https://github.com/shopify)
+
+expo-image
++ @website: https://docs.expo.dev/versions/latest/sdk/image/
++ @github: https://github.com/expo/expo/tree/master/packages/expo-image
++ @author: [@expo](https://github.com/expo)
+
+i18next
++ @website: https://react.i18next.com/
++ @github: https://github.com/i18next/react-i18next
++ @author: [@i18next](https://github.com/i18next)
+
+react-native-camera
++ @website: https://react-native-camera.github.io/react-native-camera/
++ @github: https://github.com/react-native-camera/react-native-camera
+
+react-native-fast-image
++ @github: https://github.com/DylanVann/react-native-fast-image
++ @author: [@DylanVann](https://github.com/DylanVann)
+
+react-native-gesture-handler
++ @website: https://software-mansion.github.io/react-native-gesture-handler/
++ @github: https://github.com/software-mansion/react-native-gesture-handler
++ @author: [@software-mansion](https://github.com/software-mansion)
+
+react-native-localize
++ @website: https://github.com/zoontek/react-native-localize
++ @author: [@zoontek](https://github.com/zoontek)
+
+react-native-maps
++ @github: https://github.com/react-native-maps/react-native-maps
+
+react-native-safe-area-context
++ @github: https://github.com/th3rdwave/react-native-safe-area-context
++ @author: [@th3rdwave](https://github.com/th3rdwave)
+
+react-native-vector-icons
++ @website: https://oblador.github.io/react-native-vector-icons/
++ @github: https://github.com/oblador/react-native-vector-icons
++ @author: [@oblador](https://github.com/oblador)
+
+react-native-video
++ @website: https://thewidlarzgroup.github.io/react-native-video/
++ @github: https://github.com/react-native-video/react-native-video
++ @author: [@thewidlarzgroup](https://github.com/thewidlarzgroup)
+
+react-native-webview
++ @github: https://github.com/react-native-webview/react-native-webview
++ @author: [@react-native-webview](https://github.com/react-native-webview)
+
+react-native-vision-camera
++ @website: https://react-native-vision-camera.com/
++ @github: https://github.com/mrousavy/react-native-vision-camera
++ @author: [@mrousavy](https://github.com/mrousavy)
+
++ formik
++ @website: https://formik.org/
++ @github: https://github.com/jaredpalmer/formik
++ @author: [@jaredpalmer](https://github.com/jaredpalmer)
+
++ react-hook-form
++ @website: https://react-hook-form.com/
++ @github: https://github.com/react-hook-form/react-hook-form
++ @author: [@react-hook-form](https://github.com/react-hook-form)
+
+
+Other popular libraries not listed above
   > **(_separate question below_)**
   - Other answers (freeform)
+```
 
 ### 🤷 / ✅ / 🚫 / 👍 / 👎 questions
 
