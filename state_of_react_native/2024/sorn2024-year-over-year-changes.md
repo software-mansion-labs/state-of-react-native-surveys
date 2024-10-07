@@ -712,92 +712,204 @@ What graphics and animations solutions do you use in your React Native apps?
 
 ## [Debugging and profiling](https://survey.stateofreactnative.com/en/survey/state-of-react-native/2023/read-only/9)
 
-How do you debug and profile your apps?
+```diff
++ This part is all new
 
-### Debugging tools
+Solutions to debug and profile your React Native apps.
 
-What tools do you use to debug your React Native apps? Check all that apply
+### 🤷 / ✅ / 🚫 / 👍 / 👎 questions
 
-> **(_multiselect checkbox_)**
+> **(_radio buttons_)**
 
-- Chrome DevTools (in-browser - Remote JS debugging)
-- Chrome DevTools (Expo)
-- Chrome DevTools (Hermes)
-- Console logs
-- Flipper
-- Reactotron
-- React DevTools
-- React Native Debugger
-- Native debugging (Xcode / Android Studio)
-- Other debugging tools
-- > **(_separate question below_)**
+console (logs, warnings, errors)
+  - https://developer.mozilla.org/en-US/docs/Web/API/console
+  - @example:
+  \```js
+    console.log("Hello React Native! 😊")
+  \```
+
+Remote JavaScript Debugging
+  Deprecated since React Native 0.73. Remote JavaScript Debugging connects an external web browser (Chrome) to your app and runs your JavaScript code inside a web page.
+  - @website: https://reactnative.dev/docs/other-debugging-methods#remote-javascript-debugging-deprecated
+
+Hermes Debugger
+  Available starting with React Native 0.73. Debug JavaScript code on the device via Hermes that supports Chrome DevTools Protocol.
+  @website: https://reactnative.dev/docs/debugging?js-debugger=hermes#opening-the-debugger
+
+  @side websites:
+     https://developer.chrome.com/docs/devtools
+     https://docs.expo.dev/debugging/tools/#debugging-with-chrome-devtools
+
+Direct JSC debugging
+  Use Safari to debug the iOS version of your app when using JavaScriptCore (JSC) as your app's runtime.
+  @website: https://reactnative.dev/docs/other-debugging-methods#safari-developer-tools-direct-jsc-debugging
+
+React Native DevTools
+  Starting with React Native 0.76. New default debugging experience for React Native apps based on Chrome DevTools Protocol with React DevTools included.
+  @website: https://github.com/react-native-community/discussions-and-proposals/discussions/819
+
+Experimental New Debugger
+  Available in React Native 0.73 - 0.75. The preview of the experimental new debugger experience with a new debugger frontend.
+  @website: https://github.com/react-native-community/discussions-and-proposals/discussions/733
+
+React DevTools
+  Components inspector and performance profiler that let's you debug the React component hierarchy within your app.
+  @website: https://reactnative.dev/docs/react-devtools
+
+Element Inspector
+  The inspector lets you tap on any UI element in the app and see information about it.
+  @website: https://reactnative.dev/docs/react-devtools#integration-with-the-element-inspector
+
+LogBox
+  Displays console errors and console warnings as the overlay inside your app.
+  @website: https://reactnative.dev/docs/debugging#logbox
+
+Performance Monitor
+  Displays performance overlay inside your app. Inspect RAM consumption, UI and JS threads FPS and number of views mounted.
+  @website: https://reactnative.dev/docs/performance
+
+Flipper
+  Cross-platform debugging tool for mobile apps. Visualize, inspect, and control your apps from a desktop interface, with extensibility via plugins.
+  @author: [@facebook](https://github.com/facebook)
+  @website: https://fbflipper.com/
+  @github: https://github.com/facebook/flipper
+
+  @side websites
+    - https://fbflipper.com/docs/getting-started/react-native
+    - https://reactnative.dev/docs/debugging?js-debugger=flipper#opening-the-debugger
+
+Reactotron
+  A desktop app for inspecting your React JS and React Native projects. macOS, Linux, and Windows.
+  @author: [@infinitered](https://github.com/infinitered)
+  @website: https://docs.infinite.red/reactotron/
+  @github: https://github.com/infinitered/reactotron
+
+Expo Dev tools plugins
+  Available for Expo Development builds of your app. Add debugging features on top of installed libraries.
+  @website: https://docs.expo.dev/debugging/devtools-plugins
+  @github: https://github.com/expo/dev-plugins
+  @author: [@expo](https://github.com/expo)
+
+react-native-performance
+  Toolchain to measure and monitor the performance of your React Native app in development, pipeline and in production.
+  @author: [@oblador](https://github.com/oblador)
+  @github: https://github.com/oblador/react-native-performance
+
+Flashlight
+  Lighthouse for Mobile - audits your app and gives a performance score to your Android apps.
+  @website: https://flashlight.dev/
+  @author: [@bamlab](https://github.com/bamlab)
+  @github: https://github.com/bamlab/flashlight
+
+`react-native-flipper-performance-monitor`
+  An attempt to have a lighthouse for React Native. Flipper plugin to show a graph of the React Native performance monitor.
+  @author: [@bamlab](https://github.com/bamlab)
+  @github: https://github.com/bamlab/react-native-flipper-performance-monitor
+
+Native debugging (Xcode / Android Studio)
+  @website: https://developer.android.com/studio/debug
+  @website: https://developer.apple.com/documentation/xcode/debugging
+
+Native profiling (Xcode, Android Studio)
+  @website: https://developer.android.com/studio/profile
+  @website: https://developer.apple.com/documentation/xcode/performance-and-metrics
+
+Other debugging and profiling tools
   - Other answers (freeform)
 
-### Problems - debugging tools
+### Debugging and profiling pain points
 
-What problems have you run into? Check all that apply
+What pain points have you encountered with debugging and profiling in your React Native projects? If applicable, point out the specific solution and its problems.
 
-- Connecting debugger to app - Flipper
-- Connecting debugger to app - Chrome DevTools (Expo)
-- Connecting debugger to app - Chrome DevTools (Hermes)
-- Connecting debugger to app - React DevTools
-- Native debugging (Xcode, Android Studio)
-- Picking the right debugging tool
-- Unclear docs
-- No issues
-- Other problems - debugging tools
-  > **(_separate question below_)**
-  - Other answers (freeform)
+> **(_freeform input_)**
+```
 
-### JavaScript debugging features (Chrome DevTools)
-
-Which Chrome DevTools features do you use (across current React Native debugging tools and/or for web development)? Check all that apply
-
-- Console panel (console logs)
-- Console panel (executing statements)
-- Sources panel (breakpoints)
-- Sources panel (editing files)
-- Performance panel (CPU profiler)
-- Memory panel (memory profiler)
-- Network panel
-- React DevTools
-- Elements panel (DOM)
-- Elements panel (styles)
-- Network panel (network throttling)
-- Lighthouse
-- Recorder
-- Third-party plugins
-- Other problems - JavaScript debugging features (Chrome DevTools)
-  > **(_separate question below_)**
-  - Other answers (freeform)
-
-### Problems - JavaScript debugging
-
-What problems have you run into? Check all that apply
-
-- Breakpoints not working
-- Source maps not working
-- Debugger disconnecting
-- Crashes (debugger)
-- Crashes (application)
-- No issues
-- Other problems - JavaScript debugging
-  > **(_separate question below_)**
-  - Other answers (freeform)
-
-### Performance profiling
-
-What tools do you use to profile React Native app performance? Check all that apply
-
-- Flashlight
-- Flipper
-- React Native Flipper Performance Plugin
-- React Native Performance
-- React Native Performance Monitor
-- Native profiling (Xcode, Android Studio)
-- Other performance profiling tools
-  > **(_separate question below_)**
-  - Other answers (freeform)
+```diff
+- ### Debugging tools
+-
+- What tools do you use to debug your React Native apps? Check all that apply
+-
+- > **(_multiselect checkbox_)**
+-
+- - Chrome DevTools (in-browser - Remote JS debugging)
+- - Chrome DevTools (Expo)
+- - Chrome DevTools (Hermes)
+- - Console logs
+- - Flipper
+- - Reactotron
+- - React DevTools
+- - React Native Debugger
+- - Native debugging (Xcode / Android Studio)
+- - Other debugging tools
+- - > **(_separate question below_)**
+-   - Other answers (freeform)
+-
+- ### Problems - debugging tools
+-
+- What problems have you run into? Check all that apply
+-
+- - Connecting debugger to app - Flipper
+- - Connecting debugger to app - Chrome DevTools (Expo)
+- - Connecting debugger to app - Chrome DevTools (Hermes)
+- - Connecting debugger to app - React DevTools
+- - Native debugging (Xcode, Android Studio)
+- - Picking the right debugging tool
+- - Unclear docs
+- - No issues
+- - Other problems - debugging tools
+-   > **(_separate question below_)**
+-   - Other answers (freeform)
+-
+- ### JavaScript debugging features (Chrome DevTools)
+-
+- Which Chrome DevTools features do you use (across current React Native debugging tools and/or for web development)? Check all that apply
+-
+- - Console panel (console logs)
+- - Console panel (executing statements)
+- - Sources panel (breakpoints)
+- - Sources panel (editing files)
+- - Performance panel (CPU profiler)
+- - Memory panel (memory profiler)
+- - Network panel
+- - React DevTools
+- - Elements panel (DOM)
+- - Elements panel (styles)
+- - Network panel (network throttling)
+- - Lighthouse
+- - Recorder
+- - Third-party plugins
+- - Other problems - JavaScript debugging features (Chrome DevTools)
+-   > **(_separate question below_)**
+-   - Other answers (freeform)
+-
+- ### Problems - JavaScript debugging
+-
+- What problems have you run into? Check all that apply
+-
+- - Breakpoints not working
+- - Source maps not working
+- - Debugger disconnecting
+- - Crashes (debugger)
+- - Crashes (application)
+- - No issues
+- - Other problems - JavaScript debugging
+-   > **(_separate question below_)**
+-   - Other answers (freeform)
+-
+- ### Performance profiling
+-
+- What tools do you use to profile React Native app performance? Check all that apply
+-
+- - Flashlight
+- - Flipper
+- - React Native Flipper Performance Plugin
+- - React Native Performance
+- - React Native Performance Monitor
+- - Native profiling (Xcode, Android Studio)
+- - Other performance profiling tools
+-   > **(_separate question below_)**
+-   - Other answers (freeform)
+```
 
 ---
 
