@@ -23,28 +23,17 @@ This is a questions list proposal for the 2024 edition of the State of React Nat
     - [Platform APIs usage](#platform-apis-usage)
   - [State management](#state-management)
     - [🤷 / ✅ / 🚫 / 👍 / 👎 questions](#---------questions)
-    - [Overall happiness](#overall-happiness)
   - [Data fetching](#data-fetching)
     - [🤷 / ✅ / 🚫 / 👍 / 👎 questions](#---------questions-1)
-    - [Overall happiness](#overall-happiness-1)
   - [Navigation](#navigation)
     - [🤷 / ✅ / 🚫 / 👍 / 👎 questions](#---------questions-2)
-    - [Overall happiness](#overall-happiness-2)
   - [Styling](#styling)
     - [🤷 / ✅ / 🚫 / 👍 / 👎 questions](#---------questions-3)
-    - [Overall happiness](#overall-happiness-3)
   - [UI Components libraries](#ui-components-libraries)
     - [🤷 / ✅ / 🚫 / 👍 / 👎 questions](#---------questions-4)
-    - [Overall happiness](#overall-happiness-4)
   - [Graphics and animations](#graphics-and-animations)
     - [🤷 / ✅ / 🚫 / 👍 / 👎 questions](#---------questions-5)
-    - [Overall happiness](#overall-happiness-5)
   - [Debugging and profiling](#debugging-and-profiling)
-    - [Debugging tools](#debugging-tools)
-    - [Problems - debugging tools](#problems---debugging-tools)
-    - [JavaScript debugging features (Chrome DevTools)](#javascript-debugging-features-chrome-devtools)
-    - [Problems - JavaScript debugging](#problems---javascript-debugging)
-    - [Performance profiling](#performance-profiling)
   - [Other app aspects](#other-app-aspects)
     - [Analytics](#analytics)
     - [Crash reporting](#crash-reporting)
@@ -147,7 +136,6 @@ What was your background before you started using React Native? Check all that a
 - Non-technical role
 - Started with React Native
 - Other background
-  > **(_separate question below_)**
   - Other answers (freeform)
 
 ### How do you use React Native?
@@ -209,7 +197,6 @@ What are the platforms that you use React Native for? Check all that apply
 - Android TV
 - tvOS
 - Other target platforms
-  > **(_separate question below_)**
   - Other answers (freeform)
 
 ### Contribution to React Native
@@ -221,8 +208,7 @@ What are the platforms that you use React Native for? Check all that apply
 
 > **(_radio buttons_)**
 
-- Yes
-- No
+Yes / No
 
 ### Open Source Contribution to React Native libraries
 
@@ -233,8 +219,7 @@ What are the platforms that you use React Native for? Check all that apply
 
 > **(_radio buttons_)**
 
-- Yes
-- No
+Yes / No
 
 ### Number of released apps
 
@@ -242,6 +227,7 @@ What are the platforms that you use React Native for? Check all that apply
 - How many React Native apps have you released on Google Play or App Store?
 + How many React Native apps have you published to the app stores?
 ```
+
 > **(_radio buttons_)**
 
 - None
@@ -269,8 +255,8 @@ What are the platforms that you use React Native for? Check all that apply
 + Reasonably current (iOS 17+, Android 13+) <!--  -->
 + Old (iOS 14+, Android 9+) <!-- https://github.com/react-native-community/discussions-and-proposals/discussions/812 -->
 ```
-+ As old as possible (iOS 8+, Android 5+) <!-- versions that theoretically could be used with React Native (the very old version of React Native) -->
 
+- As old as possible (iOS 8+, Android 5+) <!-- versions that theoretically could be used with React Native (the very old version of React Native) -->
 
 ### Industry sector
 
@@ -321,7 +307,6 @@ Which industry sector(s) are you using React Native in? Check all that apply.
 - Weather
 - Video
 - Other industry sectors
-  > **(_separate question below_)**
   - Other answers (freeform)
 
 ---
@@ -343,45 +328,150 @@ The features provided by the operation system.
 <!-- https://developer.apple.com/documentation/ios-ipados-release-notes -->
 <!-- https://developer.android.com/about/versions -->
 
+```diff
 - Accessibility
-- Appearance
-- AR / VR
-- Audio playback
-- Background processing
-- Battery
-- Biometric authentication
-- Bluetooth
-- Camera
-- Clipboard
-- Cryptography (e.g. hardware encryption)
-- Deep links
-- File System
-- Foldable
-- Haptics
-- In-app payments
-- In-app reviews
-- Live Activity (Dynamic Island)
-- Location
-- Maps
-- Media library (gallery)
-- Microphone
-- ML / AI
-- NFC
-- Notifications
-- OCR
-- OpenGL
-- Permissions
-- Persistent storage (e.g. SQL database)
-- Printer
-- RTL
-- Screen orientation
-- Sensors (gyroscope, accelerometer, etc.)
-- Telephony (SMS, email, dialing, etc.)
-- Video playback
-- WebView
-- Other platform APIs usage
-  > **(_separate question below_)**
++ @website: https://developer.apple.com/documentation/accessibility/
++ @website: https://developer.android.com/guide/topics/ui/accessibility
+
+Appearance
++ @website: https://developer.apple.com/documentation/uikit/appearance_customization
++ @website: https://developer.android.com/develop/ui/views/theming/themes
+
+AR / VR
++ @website: https://developer.apple.com/augmented-reality/
+
+Audio playback
++ @website: https://developer.apple.com/documentation/avfoundation/audio_playback_recording_and_processing
++ @website: https://developer.android.com/guide/topics/media/mediaplayer
+
+Background processing
++ @website: https://developer.apple.com/documentation/backgroundtasks
++ @website: https://developer.android.com/guide/background
+
+Battery
++ @website: https://developer.apple.com/documentation/uikit/uidevice/1620042-batterylevel
++ @website: https://developer.android.com/training/monitoring-device-state/battery-monitoring
+
+Biometric authentication
++ @website: https://developer.apple.com/documentation/localauthentication
++ @website: https://developer.android.com/training/sign-in/biometric-auth
+
+Bluetooth
++ @website: https://developer.apple.com/documentation/corebluetooth
++ @website: https://developer.android.com/guide/topics/connectivity/bluetooth
+
+Camera
++ @website: https://developer.apple.com/documentation/avfoundation/cameras_and_media_capture
++ @website: https://developer.android.com/media/camera/camerax
+
+Clipboard
++ @website: https://developer.apple.com/documentation/uikit/uipasteboard
++ @website: https://developer.android.com/guide/topics/text/copy-paste
+
+Cryptography (e.g. hardware encryption)
++ @website: https://developer.apple.com/documentation/cryptokit
++ @website: https://developer.android.com/guide/topics/security/cryptography
+
+Deep links
++ @website: https://developer.apple.com/documentation/xcode/supporting-universal-links-in-your-app
++ @website: https://developer.android.com/training/app-links
+
+File System
++ @website: https://developer.apple.com/documentation/foundation/filemanager
++ @website: https://developer.android.com/training/data-storage
+
+Foldable
++ @website: https://developer.android.com/guide/topics/large-screens/learn-about-foldables
+
+Haptics
++ @website: https://developer.apple.com/documentation/corehaptics
++ @website: https://developer.android.com/develop/ui/views/haptics?hl=en
+
+In-app payments
++ @website: https://developer.apple.com/in-app-purchase/
++ @website: https://developer.android.com/google/play/billing
+
+In-app reviews
++ @website: https://developer.apple.com/documentation/storekit/requestreviewaction
++ @website: https://developer.android.com/guide/playcore/in-app-review
+
+Live Activity (Dynamic Island)
++ @website: https://developer.apple.com/documentation/activitykit
+
+Location
++ @website: https://developer.apple.com/documentation/corelocation
++ @website: https://developer.android.com/training/location
+
+Maps
++ @website: https://developer.apple.com/maps/
++ @website: https://developers.google.com/maps/documentation/android-sdk
+
+Media library (gallery)
++ @website: https://developer.apple.com/documentation/photokit
++ @website: https://developer.android.com/training/data-storage/shared/media
+
+Microphone
++ @website: https://developer.apple.com/documentation/avfoundation/audio_playback_recording_and_processing
++ @website: https://developer.android.com/guide/topics/media/mediarecorder
+
+ML / AI
++ @website: https://developer.apple.com/machine-learning/
++ @website: https://developer.android.com/ml
+
+NFC
++ @website: https://developer.apple.com/documentation/corenfc
++ @website: https://developer.android.com/guide/topics/connectivity/nfc
+
+Notifications
++ @website: https://developer.apple.com/documentation/usernotifications
++ @website: https://developer.android.com/guide/topics/ui/notifiers/notifications
+
+OCR
++ @website: https://developer.apple.com/documentation/vision/vnrecognizetextrequest
++ @website: https://developers.google.com/ml-kit/vision/text-recognition/android
+
+OpenGL
++ @website: https://developer.apple.com/documentation/opengles
++ @website: https://developer.android.com/guide/topics/graphics/opengl
+
+Permissions
++ @website: https://developer.apple.com/documentation/uikit/protecting_the_user_s_privacy
++ @website: https://developer.android.com/guide/topics/permissions/overview
+
+Persistent storage (e.g. SQL database)
++ @website: https://developer.apple.com/documentation/coredata
++ @website: https://developer.android.com/training/data-storage/sqlite
+
+Printer
++ @website: https://developer.apple.com/documentation/uikit/uiprintinteractioncontroller
++ @website: https://developer.android.com/training/printing
+
+RTL
++ @website: https://developer.apple.com/design/human-interface-guidelines/right-to-left
++ @website: https://developer.android.com/training/basics/supporting-devices/languages
+
+Screen orientation
++ @website: https://developer.apple.com/documentation/uikit/uiinterfaceorientation
+
+Sensors (gyroscope, accelerometer, etc.)
++ @website: https://developer.apple.com/documentation/coremotion
++ @website: https://developer.android.com/guide/topics/sensors/sensors_overview
+
+Telephony (SMS, email, dialing, etc.)
++ @website: https://developer.apple.com/documentation/messageui
++ @website: https://developer.android.com/guide/components/intents-common#Phone
+
+Video playback
++ @website: https://developer.apple.com/documentation/avfoundation/media_playback_and_selection
++ @website: https://developer.android.com/guide/topics/media/mediaplayer
+
+WebView
++ @website: https://developer.apple.com/documentation/webkit/wkwebview
++ @website: https://developer.android.com/guide/webapps/webview
+
+Other platform APIs usage
   - Other answers (freeform)
+```
 
 ```diff
 
@@ -412,10 +502,12 @@ What state management solutions do you regularly use in your React Native apps?
 - Jotai
 - MobX
 - MobX-State-Tree
+
 ```diff
 - React (useState, useReducer, useContext, this.state)
 + React built-ins (useState, useContext, etc.)
 ```
+
 - Recoil
 - Redux
 - Redux Toolkit
@@ -562,9 +654,11 @@ What styling techniques do you regularly use in your React Native apps?
 
 - Dripsy (by Fernando Rojo)
 - Emotion
+
 ```diff
 - Fast Styles (by Fede Martín) # too niche
 ```
+
 - gluestack-style
 - Inline styling
 - NativeWind (by Mark Lawlor)
@@ -575,9 +669,11 @@ What styling techniques do you regularly use in your React Native apps?
 - tailwind-rn (by Vadim Demedes)
 - Tailwind React Native Classnames (twrnc) (by Jared Henderson)
 - Tamagui (by Nate Wienert)
+
 ```diff
 - React Native Zephyr (by Formidable) # too niche
 ```
+
 - Other styling techniques
   > **(_separate question below_)**
   - Other answers (freeform)
@@ -712,7 +808,7 @@ What graphics and animations solutions do you use in your React Native apps?
 
 ## [Debugging and profiling](https://survey.stateofreactnative.com/en/survey/state-of-react-native/2023/read-only/9)
 
-```diff
+````diff
 + This part is all new
 
 Solutions to debug and profile your React Native apps.
@@ -822,7 +918,7 @@ Other debugging and profiling tools
 What pain points have you encountered with debugging and profiling in your React Native projects? If applicable, point out the specific solution and its problems.
 
 > **(_freeform input_)**
-```
+````
 
 ```diff
 - ### Debugging tools
@@ -1496,11 +1592,11 @@ React Native Directory
 School / higher education
 Self-directed learning
 Videos
-X platform
++ X platform
 Other learning methods
   > **(_separate question below_)**
   - Other answers (freeform)
-``
+```
 
 ### Blogs & magizines
 
@@ -1650,6 +1746,7 @@ React Universe On Air (former The React Native Show Podcast)
 Other answers (freeform)
   > **(_separate question below_)**
   > What other React Native or general programming-related podcasts not listed above do you listen to? Write all that apply (freeform)
+```
 
 ### Video creators
 
