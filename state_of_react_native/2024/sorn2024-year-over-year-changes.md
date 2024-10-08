@@ -1482,22 +1482,25 @@ What methods do you use to learn and improve your React Native skills? Check all
 
 > **(_multiselect checkbox_)**
 
-- Books
-- Coding bootcamp
-- Expo docs
-- Mentoring
-- Official React Native docs
-- On-the-job training
-- Online courses (free)
-- Online courses (paid)
-- Podcasts
-- React Native Directory
-- School / higher education
-- Self-directed learning
-- Videos
-- Other learning methods
+```diff
+Books
+Coding bootcamp
+Expo docs
+Mentoring
+Official React Native docs
+On-the-job training
+Online courses (free)
+Online courses (paid)
+Podcasts
+React Native Directory
+School / higher education
+Self-directed learning
+Videos
+X platform
+Other learning methods
   > **(_separate question below_)**
   - Other answers (freeform)
+``
 
 ### Blogs & magizines
 
@@ -1505,21 +1508,47 @@ What blogs, magazines or newsletters do you consult to keep up with React Native
 
 > **(_multiselect checkbox_)**
 
-- Callstack blog <!-- https://www.callstack.com/blog -->
-- DEV Community (dev.to) <!-- https://dev.to/t/reactnative -->
-- Expo blog (Exposition) <!-- https://blog.expo.dev/ -->
-- Kent C. Dodds <!-- https://kentcdodds.com/blog -->
-- LogRocket <!-- https://blog.logrocket.com/ -->
-- Medium <!-- https://medium.com/tag/react-native -->
-- Microsoft React Native Blog <!-- https://devblogs.microsoft.com/react-native/ -->
-- r/reactnative <!-- https://www.reddit.com/r/reactnative/ -->
-- React Native blog <!-- https://reactnative.dev/blog -->
-- React Native Newsletter (by Infinite Red) <!-- https://reactnativenewsletter.com/ -->
-- Software Mansion blog <!-- https://blog.swmansion.com/ -->
-- This Week In React (by Sébastien Lorber) <!-- https://thisweekinreact.com/ -->
-- Other blogs, magazines or newsletters
+```diff
+Callstack blog
++ @website: https://www.callstack.com/blog
+
+DEV Community (dev.to)
++ @website: https://dev.to/t/reactnative
+
+Expo blog (Exposition)
++ @website: https://blog.expo.dev/
+
+Kent C. Dodds
++ @website: https://kentcdodds.com/blog
+
+LogRocket
++ @website: https://blog.logrocket.com/
+
+Medium
++ @website: https://medium.com/tag/react-native
+
+Microsoft React Native Blog
++ @website: https://devblogs.microsoft.com/react-native/
+
+r/reactnative
++ @website: https://www.reddit.com/r/reactnative/
+
+React Native blog
++ @website: https://reactnative.dev/blog
+
+React Native Newsletter (by Infinite Red)
++ @website: https://reactnativenewsletter.com/
+
+Software Mansion blog
++ @website: https://blog.swmansion.com/
+
+This Week In React (by Sébastien Lorber)
++ @website: https://thisweekinreact.com/
+
+Other blogs, magazines or newsletters
   > **(_separate question below_)**
   - What other blogs, magazines or newsletters not listed above do you read? Write all that apply (freeform)
+```
 
 ### Sites & courses
 
@@ -1527,42 +1556,98 @@ What sites or courses do you consult to learn React Native? Check all that apply
 
 > **(_multiselect checkbox_)**
 
-> [!WARNING]
-> TODO: add React docs!
+```diff
+Animate React Native (by Catalin Miron)
++ @website: https://www.animatereactnative.com/
++ @author: [@cm_ro](https://github.com/cm-ro)
 
-- Animate React Native (by Catalin Miron) <!-- https://www.animatereactnative.com/ -->
-- Codecademy <!-- https://www.codecademy.com/ -->
-- Developer Training (by Callstack) <!-- https://www.callstack.com/products/developer-training -->
-- Egghead.io <!-- https://egghead.io/ -->
-- Epic React (by Kent C. Dodds) <!-- https://epicreact.dev/ -->
-- Expo docs <!-- https://docs.expo.dev/ -->
-- Frontend Masters <!-- https://frontendmasters.com/ -->
-- Medium
-<!-- - React docs <!-- https://react.dev/ -->
-- React Native docs <!-- https://reactnative.dev/ -->
-- Reddit
-- Stack Overflow
-- Start React Native (by William Candillon) <!-- https://start-react-native.dev/ -->
-- Solito docs
-- Udemy
-- The Ultimate Guide to React Native Optimization (by Callstack)
-- X (Twitter)
-- YouTube
-- Other sites or courses
+Codecademy
++ @website: https://www.codecademy.com/
+
+Developer Training (by Callstack) <!-- https://www.callstack.com/products/developer-training -->
++ @website: https://www.callstack.com/products/developer-training
++ @author: [@callstack](https://github.com/callstack)
+
+Egghead.io
++ @website: https://egghead.io/
+
+Epic React (by Kent C. Dodds)
++ @website: https://epicreact.dev/
++ @author: [@kentcdodds](https://github.com/kentcdodds)
+
+Expo docs
++ @website: https://docs.expo.dev/
++ @author: [@expo](https://github.com/expo)
+
+Frontend Masters
++ @website: https://frontendmasters.com/
+
+Medium
++ @website: https://medium.com/
+
+React docs
++ @website: https://react.dev/
+
+React Native docs
++ @website: https://reactnative.dev/
+
+Reddit
++ @website: https://www.reddit.com/
+
+Stack Overflow
++ @website: https://stackoverflow.com/
+
+Start React Native
++ @website: https://start-react-native.dev/
++ @author: [@wcandillon](https://github.com/wcandillon)
+
+Solito docs
++ @website: https://solito.dev/
++ @author: [@nandorojo](https://github.com/nandorojo)
+
+Udemy
++ @website: https://www.udemy.com/
+
+The Ultimate Guide to React Native Optimizatio
++ @website: https://www.callstack.com/blog/the-ultimate-guide-to-react-native-optimization
++ @author: [@callstack](https://github.com/callstack)
+
+X (Twitter)
++ @website: https://x.com/
+
+YouTube
++ @website: https://www.youtube.com/
+
+Other sites or courses
   > **(_separate question below_)**
   - What other sites, courses or book not listed above do you consult to learn React Native? Write all that apply (freeform)
+```
 
 ### Podcasts
 
 What podcasts about React Native or programming in general do you listen to? Check all that apply
 
-- PodRocker (by LogRocket) <!-- https://podrocket.logrocket.com/
-- React Native Radio (by Infinite Red) <!-- https://reactnativeradio.com/
-- Rocket Ship (by Simon Grimm)
-- Syntax.fm <!-- https://syntax.fm/
-- The Changelog <!-- https://changelog.com/
-- The React Native Show Podcast (by Callstack) <!-- https://www.callstack.com/podcast
-- Other answers (freeform)
+```diff
+PodRocker
++ @website: https://podrocket.logrocket.com/
++ @author: [@logrocket](https://github.com/logrocket)
+
+React Native Radio
++ @website: https://reactnativeradio.com/
++ @author: [@infinitered](https://github.com/infinitered)
+
+Rocket Ship
++ @website: https://syntax.fm/
++ @author: [@saimon24](https://github.com/saimon24)
+
+The Changelog
++ @website: https://changelog.com/
+
+React Universe On Air (former The React Native Show Podcast)
++ @website: https://www.callstack.com/podcast
++ @author: [@callstack](https://github.com/callstack)
+
+Other answers (freeform)
   > **(_separate question below_)**
   > What other React Native or general programming-related podcasts not listed above do you listen to? Write all that apply (freeform)
 
@@ -1583,19 +1668,43 @@ What other developer surveys do you participate in? Check all that apply
 > [!WARNING]
 > TODO: add State of HTML
 
-- CodinGame Developer Survey
-- Design Tools Survey
-- Jamstack Community Survey
-- JetBrains State of Developer Ecosystem
-- Postman State of the API Report
-- Stack Overflow Annual Developer Survey
-- State of CSS
-- State of JS
-- State of GraphQL
-- State of React
-- Other surveys not mentioned above
+```diff
+- CodinGame Developer Survey // too niche
+
+Design Tools Survey
++ @website: https://uxtools.co/survey/2023/
+
+Jamstack Community Survey
++ @website: https://jamstack.org/survey/
+
+JetBrains State of Developer Ecosystem
++ @website: https://www.jetbrains.com/lp/devecosystem-2023/
+
+Postman State of the API Report
++ @website: https://www.postman.com/state-of-api/
+
+Stack Overflow Annual Developer Survey
++ @website: https://survey.stackoverflow.co/
+
+State of CSS
++ @website: https://stateofcss.com/
+
+State of JavaScript
++ @website: https://stateofjs.com/
+
+State of GraphQL
++ @website: https://stateofgraphql.com/
+
+State of React
++ @website: https://stateofreact.com/
+
++ State of HTML
++ @website: https://stateofhtml.com/
+
+Other surveys not mentioned above
   > **(_separate question below_)**
   - Other answers (freeform)
+```
 
 ---
 
