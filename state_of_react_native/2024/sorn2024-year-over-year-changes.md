@@ -23,28 +23,17 @@ This is a questions list proposal for the 2024 edition of the State of React Nat
     - [Platform APIs usage](#platform-apis-usage)
   - [State management](#state-management)
     - [🤷 / ✅ / 🚫 / 👍 / 👎 questions](#---------questions)
-    - [Overall happiness](#overall-happiness)
   - [Data fetching](#data-fetching)
     - [🤷 / ✅ / 🚫 / 👍 / 👎 questions](#---------questions-1)
-    - [Overall happiness](#overall-happiness-1)
   - [Navigation](#navigation)
     - [🤷 / ✅ / 🚫 / 👍 / 👎 questions](#---------questions-2)
-    - [Overall happiness](#overall-happiness-2)
   - [Styling](#styling)
     - [🤷 / ✅ / 🚫 / 👍 / 👎 questions](#---------questions-3)
-    - [Overall happiness](#overall-happiness-3)
   - [UI Components libraries](#ui-components-libraries)
     - [🤷 / ✅ / 🚫 / 👍 / 👎 questions](#---------questions-4)
-    - [Overall happiness](#overall-happiness-4)
   - [Graphics and animations](#graphics-and-animations)
     - [🤷 / ✅ / 🚫 / 👍 / 👎 questions](#---------questions-5)
-    - [Overall happiness](#overall-happiness-5)
   - [Debugging and profiling](#debugging-and-profiling)
-    - [Debugging tools](#debugging-tools)
-    - [Problems - debugging tools](#problems---debugging-tools)
-    - [JavaScript debugging features (Chrome DevTools)](#javascript-debugging-features-chrome-devtools)
-    - [Problems - JavaScript debugging](#problems---javascript-debugging)
-    - [Performance profiling](#performance-profiling)
   - [Other app aspects](#other-app-aspects)
     - [Analytics](#analytics)
     - [Crash reporting](#crash-reporting)
@@ -147,7 +136,6 @@ What was your background before you started using React Native? Check all that a
 - Non-technical role
 - Started with React Native
 - Other background
-  > **(_separate question below_)**
   - Other answers (freeform)
 
 ### How do you use React Native?
@@ -209,30 +197,36 @@ What are the platforms that you use React Native for? Check all that apply
 - Android TV
 - tvOS
 - Other target platforms
-  > **(_separate question below_)**
   - Other answers (freeform)
 
 ### Contribution to React Native
 
-Have you contributed to React Native upstream in 2023 (commits/PRs)?
+```diff
+- Have you contributed to React Native upstream in 2023 (commits/PRs)?
++ Have you contributed to React Native upstream in 2024 (commits/PRs)?
+```
 
 > **(_radio buttons_)**
 
-- Yes
-- No
+Yes / No
 
 ### Open Source Contribution to React Native libraries
 
-Have you contributed to any Open Source React Native library in 2023 (commits/PRs)?
+```diff
+- Have you contributed to any Open Source React Native library in 2023 (commits/PRs)?
++ Have you contributed to any Open Source React Native library in 2024 (commits/PRs)?
+```
 
 > **(_radio buttons_)**
 
-- Yes
-- No
+Yes / No
 
 ### Number of released apps
 
-How many React Native apps have you released on Google Play or App Store?
+```diff
+- How many React Native apps have you released on Google Play or App Store?
++ How many React Native apps have you published to the app stores?
+```
 
 > **(_radio buttons_)**
 
@@ -246,9 +240,22 @@ How many React Native apps have you released on Google Play or App Store?
 
 > **(_radio buttons_)**
 
+> [!WARNING]
+> https://gs.statcounter.com/ios-version-market-share
+> https://gs.statcounter.com/os-version-market-share/android
+> https://apilevels.com/
+> https://github.com/search?q=repo%3Afacebook%2Freact-native+min_ios_version_supported&type=code
+> https://github.com/search?q=repo%3Afacebook%2Freact-native+minSdkVersion&type=code
+
+```diff
 - Most recent ones (iOS 17+, Android 14+)
 - Reasonably current (iOS 15+, Android 12+) <!-- versions 2/3 years old that are still supported -->
 - Old (iOS 12+, Android 9+) <!-- older versions that might not be supported, but are still part of the market -->
++ The most recent versions (iOS 18+, Android 15+)
++ Reasonably current (iOS 17+, Android 13+) <!--  -->
++ Old (iOS 14+, Android 9+) <!-- https://github.com/react-native-community/discussions-and-proposals/discussions/812 -->
+```
+
 - As old as possible (iOS 8+, Android 5+) <!-- versions that theoretically could be used with React Native (the very old version of React Native) -->
 
 ### Industry sector
@@ -300,7 +307,6 @@ Which industry sector(s) are you using React Native in? Check all that apply.
 - Weather
 - Video
 - Other industry sectors
-  > **(_separate question below_)**
   - Other answers (freeform)
 
 ---
@@ -311,7 +317,10 @@ The features provided by the operation system.
 
 ### Platform APIs usage
 
-What Platform APIs have you used in 2022 in React Native? Check all that apply
+```diff
+- What Platform APIs have you used in 2022 in React Native? Check all that apply
++ What Platform APIs have you used in 2024 in React Native? Check all that apply
+```
 
 > **(_multiselect checkbox_)**
 
@@ -319,51 +328,171 @@ What Platform APIs have you used in 2022 in React Native? Check all that apply
 <!-- https://developer.apple.com/documentation/ios-ipados-release-notes -->
 <!-- https://developer.android.com/about/versions -->
 
+```diff
 - Accessibility
-- Appearance
-- AR / VR
-- Audio playback
-- Background processing
-- Battery
-- Biometric authentication
-- Bluetooth
-- Camera
-- Clipboard
-- Cryptography (e.g. hardware encryption)
-- Deep links
-- File System
-- Foldable
-- Haptics
-- In-app payments
-- In-app reviews
-- Live Activity (Dynamic Island)
-- Location
-- Maps
-- Media library (gallery)
-- Microphone
-- ML / AI
-- NFC
-- Notifications
-- OCR
-- OpenGL
-- Permissions
-- Persistent storage (e.g. SQL database)
-- Printer
-- RTL
-- Screen orientation
-- Sensors (gyroscope, accelerometer, etc.)
-- Telephony (SMS, email, dialing, etc.)
-- Video playback
-- WebView
-- Other platform APIs usage
-  > **(_separate question below_)**
++ @website: https://developer.apple.com/documentation/accessibility/
++ @website: https://developer.android.com/guide/topics/ui/accessibility
+
+Appearance
++ @website: https://developer.apple.com/documentation/uikit/appearance_customization
++ @website: https://developer.android.com/develop/ui/views/theming/themes
+
+AR / VR
++ @website: https://developer.apple.com/augmented-reality/
+
+Audio playback
++ @website: https://developer.apple.com/documentation/avfoundation/audio_playback_recording_and_processing
++ @website: https://developer.android.com/guide/topics/media/mediaplayer
+
+Background processing
++ @website: https://developer.apple.com/documentation/backgroundtasks
++ @website: https://developer.android.com/guide/background
+
+Battery
++ @website: https://developer.apple.com/documentation/uikit/uidevice/1620042-batterylevel
++ @website: https://developer.android.com/training/monitoring-device-state/battery-monitoring
+
+Biometric authentication
++ @website: https://developer.apple.com/documentation/localauthentication
++ @website: https://developer.android.com/training/sign-in/biometric-auth
+
+Bluetooth
++ @website: https://developer.apple.com/documentation/corebluetooth
++ @website: https://developer.android.com/guide/topics/connectivity/bluetooth
+
+Camera
++ @website: https://developer.apple.com/documentation/avfoundation/cameras_and_media_capture
++ @website: https://developer.android.com/media/camera/camerax
+
+Clipboard
++ @website: https://developer.apple.com/documentation/uikit/uipasteboard
++ @website: https://developer.android.com/guide/topics/text/copy-paste
+
+Cryptography (e.g. hardware encryption)
++ @website: https://developer.apple.com/documentation/cryptokit
++ @website: https://developer.android.com/guide/topics/security/cryptography
+
+Deep links
++ @website: https://developer.apple.com/documentation/xcode/supporting-universal-links-in-your-app
++ @website: https://developer.android.com/training/app-links
+
+File System
++ @website: https://developer.apple.com/documentation/foundation/filemanager
++ @website: https://developer.android.com/training/data-storage
+
+Foldable
++ @website: https://developer.android.com/guide/topics/large-screens/learn-about-foldables
+
+Haptics
++ @website: https://developer.apple.com/documentation/corehaptics
++ @website: https://developer.android.com/develop/ui/views/haptics?hl=en
+
+In-app payments
++ @website: https://developer.apple.com/in-app-purchase/
++ @website: https://developer.android.com/google/play/billing
+
+In-app reviews
++ @website: https://developer.apple.com/documentation/storekit/requestreviewaction
++ @website: https://developer.android.com/guide/playcore/in-app-review
+
+Live Activity (Dynamic Island)
++ @website: https://developer.apple.com/documentation/activitykit
+
+Location
++ @website: https://developer.apple.com/documentation/corelocation
++ @website: https://developer.android.com/training/location
+
+Maps
++ @website: https://developer.apple.com/maps/
++ @website: https://developers.google.com/maps/documentation/android-sdk
+
+Media library (gallery)
++ @website: https://developer.apple.com/documentation/photokit
++ @website: https://developer.android.com/training/data-storage/shared/media
+
+Microphone
++ @website: https://developer.apple.com/documentation/avfoundation/audio_playback_recording_and_processing
++ @website: https://developer.android.com/guide/topics/media/mediarecorder
+
+ML / AI
++ @website: https://developer.apple.com/machine-learning/
++ @website: https://developer.android.com/ml
+
+NFC
++ @website: https://developer.apple.com/documentation/corenfc
++ @website: https://developer.android.com/guide/topics/connectivity/nfc
+
+Notifications
++ @website: https://developer.apple.com/documentation/usernotifications
++ @website: https://developer.android.com/guide/topics/ui/notifiers/notifications
+
+OCR
++ @website: https://developer.apple.com/documentation/vision/vnrecognizetextrequest
++ @website: https://developers.google.com/ml-kit/vision/text-recognition/android
+
+OpenGL
++ @website: https://developer.apple.com/documentation/opengles
++ @website: https://developer.android.com/guide/topics/graphics/opengl
+
+Permissions
++ @website: https://developer.apple.com/documentation/uikit/protecting_the_user_s_privacy
++ @website: https://developer.android.com/guide/topics/permissions/overview
+
+Persistent storage (e.g. SQL database)
++ @website: https://developer.apple.com/documentation/coredata
++ @website: https://developer.android.com/training/data-storage/sqlite
+
+Printer
++ @website: https://developer.apple.com/documentation/uikit/uiprintinteractioncontroller
++ @website: https://developer.android.com/training/printing
+
+RTL
++ @website: https://developer.apple.com/design/human-interface-guidelines/right-to-left
++ @website: https://developer.android.com/training/basics/supporting-devices/languages
+
+Screen orientation
++ @website: https://developer.apple.com/documentation/uikit/uiinterfaceorientation
+
+Sensors (gyroscope, accelerometer, etc.)
++ @website: https://developer.apple.com/documentation/coremotion
++ @website: https://developer.android.com/guide/topics/sensors/sensors_overview
+
+Telephony (SMS, email, dialing, etc.)
++ @website: https://developer.apple.com/documentation/messageui
++ @website: https://developer.android.com/guide/components/intents-common#Phone
+
+Video playback
++ @website: https://developer.apple.com/documentation/avfoundation/media_playback_and_selection
++ @website: https://developer.android.com/guide/topics/media/mediaplayer
+
+WebView
++ @website: https://developer.apple.com/documentation/webkit/wkwebview
++ @website: https://developer.android.com/guide/webapps/webview
+
+Other platform APIs usage
   - Other answers (freeform)
+```
+
+```diff
+
++ ### Platform APIs pain points
+
++ What pain points have you encountered related to the APIs mentioned above? Specify the individual API if applicable.
+
++ **(_freeform input_)**
+
+```
 
 ---
 
 ## [State management](https://survey.stateofreactnative.com/en/survey/state-of-react-native/2023/read-only/3)
 
 What state management solutions do you regularly use in your React Native apps?
+
+> [!WARNING]
+> TODO: revise the list and remove all solutions that are not primarily designed for state management
+>
+> TODO: add comments about why some technology gets removed
 
 ### 🤷 / ✅ / 🚫 / 👍 / 👎 questions
 
@@ -373,7 +502,12 @@ What state management solutions do you regularly use in your React Native apps?
 - Jotai
 - MobX
 - MobX-State-Tree
+
+```diff
 - React (useState, useReducer, useContext, this.state)
++ React built-ins (useState, useContext, etc.)
+```
+
 - Recoil
 - Redux
 - Redux Toolkit
@@ -384,11 +518,12 @@ What state management solutions do you regularly use in your React Native apps?
   > **(_separate question below_)**
   - Other answers (freeform)
 
-### Overall happiness
+```diff
+- ### Overall happiness
 
-How do you feel about the current overall state of state management solutions available for React Native?
+- How do you feel about the current overall state of state management solutions available for React Native?
 
-> **(_radio buttons_)**
+- > **(_radio buttons_)**
 
 - Very Unhappy
 - Unhappy
@@ -396,11 +531,25 @@ How do you feel about the current overall state of state management solutions av
 - Happy
 - Very Happy
 
++ ### State management pain points
+
++ What pain points have you encountered with state management in your React Native projects? If applicable, point out the specific solution and its problems.
+
+> **(_freeform input_)**
+```
+
+> **(_freeform input_)**
+
 ---
 
 ## [Data fetching](https://survey.stateofreactnative.com/en/survey/state-of-react-native/2023/read-only/4)
 
 What data fetching solutions do you regularly use in your React Native apps?
+
+> [!WARNING]
+> TODO: revise the list and remove all solutions that are not primarily designed for data fetching
+>
+> TODO: add comments about why some technology gets removed
 
 ### 🤷 / ✅ / 🚫 / 👍 / 👎 questions
 
@@ -418,11 +567,12 @@ What data fetching solutions do you regularly use in your React Native apps?
   > **(_separate question below_)**
   - Other answers (freeform)
 
-### Overall happiness
+```diff
+- ### Overall happiness
 
-How do you feel about the current overall state of data fetching solutions available for React Native?
+- How do you feel about the current overall state of data fetching solutions available for React Native?
 
-> **(_radio buttons_)**
+- > **(_radio buttons_)**
 
 - Very Unhappy
 - Unhappy
@@ -430,11 +580,21 @@ How do you feel about the current overall state of data fetching solutions avail
 - Happy
 - Very Happy
 
++ ### Data fetching pain points
+
++ What pain points have you encountered with data fetching in your React Native projects? If applicable, point out the specific solution and its problems.
+
+> **(_freeform input_)**
+```
+
 ---
 
 ## [Navigation](https://survey.stateofreactnative.com/en/survey/state-of-react-native/2023/read-only/5)
 
 What navigation solutions do you regularly use in your React Native apps?
+
+> [!WARNING]
+> TODO: inspect if we have some `@author`/`@creator` tag in the YAML configuration to indicate the origins of the solution. At this point we show creator in the braces, but it would be nicer to have it separated from the name of the solution.
 
 ### 🤷 / ✅ / 🚫 / 👍 / 👎 questions
 
@@ -450,11 +610,12 @@ What navigation solutions do you regularly use in your React Native apps?
   > **(_separate question below_)**
   - Other answers (freeform)
 
-### Overall happiness
+```diff
+- ### Overall happiness
 
-How do you feel about the current overall state of navigation solutions available for React Native?
+- How do you feel about the current overall state of navigation solutions available for React Native?
 
-> **(_radio buttons_)**
+- > **(_radio buttons_)**
 
 - Very Unhappy
 - Unhappy
@@ -462,11 +623,24 @@ How do you feel about the current overall state of navigation solutions availabl
 - Happy
 - Very Happy
 
++ ### Navigation pain points
+
++ What pain points have you encountered with navigation in your React Native projects? If applicable, point out the specific solution and its problems.
+
+> **(_freeform input_)**
+```
+
 ---
 
 ## [Styling](https://survey.stateofreactnative.com/en/survey/state-of-react-native/2023/read-only/6)
 
 What styling techniques do you regularly use in your React Native apps?
+
+> [!WARNING]
+> TODO: inspect if we have some `@author`/`@creator` tag in the YAML configuration to indicate the origins of the solution. At this point we show creator in the braces, but it would be nicer to have it separated from the name of the solution.
+
+> [!WARNING]
+> TODO: add `@example` with up to 3/4 code lines showcasing the solution syntax, take the most up-to-date versions of the libraries to demonstrate the syntax.
 
 ### 🤷 / ✅ / 🚫 / 👍 / 👎 questions
 
@@ -480,7 +654,11 @@ What styling techniques do you regularly use in your React Native apps?
 
 - Dripsy (by Fernando Rojo)
 - Emotion
-- Fast Styles (by Fede Martín)
+
+```diff
+- Fast Styles (by Fede Martín) # too niche
+```
+
 - gluestack-style
 - Inline styling
 - NativeWind (by Mark Lawlor)
@@ -491,16 +669,21 @@ What styling techniques do you regularly use in your React Native apps?
 - tailwind-rn (by Vadim Demedes)
 - Tailwind React Native Classnames (twrnc) (by Jared Henderson)
 - Tamagui (by Nate Wienert)
-- React Native Zephyr (by Formidable)
+
+```diff
+- React Native Zephyr (by Formidable) # too niche
+```
+
 - Other styling techniques
   > **(_separate question below_)**
   - Other answers (freeform)
 
-### Overall happiness
+```diff
+- ### Overall happiness
 
-How do you feel about the current overall state of styling techniques available for React Native?
+- How do you feel about the current overall state of styling techniques available for React Native?
 
-> **(_radio buttons_)**
+- > **(_radio buttons_)**
 
 - Very Unhappy
 - Unhappy
@@ -508,11 +691,27 @@ How do you feel about the current overall state of styling techniques available 
 - Happy
 - Very Happy
 
++ ### Styling pain points
+
++ What pain points have you encountered with styling in your React Native projects? If applicable, point out the specific solution and its problems.
+
+> **(_freeform input_)**
+```
+
 ---
 
 ## [UI Components libraries](https://survey.stateofreactnative.com/en/survey/state-of-react-native/2023/read-only/7)
 
 What UI components libraries do you regularly use in your React Native apps?
+
+> [!WARNING]
+> TODO: inspect if we have some `@author`/`@creator` tag in the YAML configuration to indicate the origins of the solution. At this point we show creator in the braces, but it would be nicer to have it separated from the name of the solution.
+
+> [!WARNING]
+> TODO: add `@example` code with importing 3,4 components from the library module.
+
+> [!WARNING]
+> TODO: research the Web in order to find new libraries
 
 ### 🤷 / ✅ / 🚫 / 👍 / 👎 questions
 
@@ -532,9 +731,10 @@ What UI components libraries do you regularly use in your React Native apps?
   > **(_separate question below_)**
   - Other answers (freeform)
 
-### Overall happiness
+```diff
+- ### Overall happiness
 
-How do you feel about the current overall state of UI components libraries available for React Native?
+- How do you feel about the current overall state of UI components libraries available for React Native?
 
 > **(_radio buttons_)**
 
@@ -544,11 +744,27 @@ How do you feel about the current overall state of UI components libraries avail
 - Happy
 - Very Happy
 
++ ### UI Components libraries pain points
+
++ What pain points have you encountered with UI components libraries in your React Native projects? If applicable, point out the specific solution and its problems.
+
+> **(_freeform input_)**
+```
+
 ---
 
 ## [Graphics and animations](https://survey.stateofreactnative.com/en/survey/state-of-react-native/2023/read-only/8)
 
 What graphics and animations solutions do you use in your React Native apps?
+
+> [!WARNING]
+> TODO: add `@example` showcasing the most prominent example from the library (up to 4 lines of code if possible)
+
+> [!WARNING]
+> TODO: inspect if we have some `@author`/`@creator` tag in the YAML configuration to indicate the origins of the solution. At this point we show creator in the braces, but it would be nicer to have it separated from the name of the solution.
+
+> [!WARNING]
+> TODO: research the Web in order to find new libraries
 
 ### 🤷 / ✅ / 🚫 / 👍 / 👎 questions
 
@@ -568,11 +784,12 @@ What graphics and animations solutions do you use in your React Native apps?
   > **(_separate question below_)**
   - Other answers (freeform)
 
-### Overall happiness
+```diff
+- ### Overall happiness
 
-How do you feel about the current overall state of graphics and animations solutions available for React Native?
+- How do you feel about the current overall state of graphics and animations solutions available for React Native?
 
-> **(_radio buttons_)**
+- > **(_radio buttons_)**
 
 - Very Unhappy
 - Unhappy
@@ -580,96 +797,215 @@ How do you feel about the current overall state of graphics and animations solut
 - Happy
 - Very Happy
 
++ ### Graphics and animations pain points
+
++ What pain points have you encountered with graphics and animations in your React Native projects? If applicable, point out the specific solution and its problems.
+
+> **(_freeform input_)**
+```
+
 ---
 
 ## [Debugging and profiling](https://survey.stateofreactnative.com/en/survey/state-of-react-native/2023/read-only/9)
 
-How do you debug and profile your apps?
+````diff
++ This part is all new
 
-### Debugging tools
+Solutions to debug and profile your React Native apps.
 
-What tools do you use to debug your React Native apps? Check all that apply
+### 🤷 / ✅ / 🚫 / 👍 / 👎 questions
 
-> **(_multiselect checkbox_)**
+> **(_radio buttons_)**
 
-- Chrome DevTools (in-browser - Remote JS debugging)
-- Chrome DevTools (Expo)
-- Chrome DevTools (Hermes)
-- Console logs
-- Flipper
-- Reactotron
-- React DevTools
-- React Native Debugger
-- Native debugging (Xcode / Android Studio)
-- Other debugging tools
-- > **(_separate question below_)**
+console (logs, warnings, errors)
+  - https://developer.mozilla.org/en-US/docs/Web/API/console
+  - @example:
+  \```js
+    console.log("Hello React Native! 😊")
+  \```
+
+Remote JavaScript Debugging
+  Deprecated since React Native 0.73. Remote JavaScript Debugging connects an external web browser (Chrome) to your app and runs your JavaScript code inside a web page.
+  - @website: https://reactnative.dev/docs/other-debugging-methods#remote-javascript-debugging-deprecated
+
+Hermes Debugger
+  Available starting with React Native 0.73. Debug JavaScript code on the device via Hermes that supports Chrome DevTools Protocol.
+  @website: https://reactnative.dev/docs/debugging?js-debugger=hermes#opening-the-debugger
+
+  @side websites:
+     https://developer.chrome.com/docs/devtools
+     https://docs.expo.dev/debugging/tools/#debugging-with-chrome-devtools
+
+Direct JSC debugging
+  Use Safari to debug the iOS version of your app when using JavaScriptCore (JSC) as your app's runtime.
+  @website: https://reactnative.dev/docs/other-debugging-methods#safari-developer-tools-direct-jsc-debugging
+
+React Native DevTools
+  Starting with React Native 0.76. New default debugging experience for React Native apps based on Chrome DevTools Protocol with React DevTools included.
+  @website: https://github.com/react-native-community/discussions-and-proposals/discussions/819
+
+Experimental New Debugger
+  Available in React Native 0.73 - 0.75. The preview of the experimental new debugger experience with a new debugger frontend.
+  @website: https://github.com/react-native-community/discussions-and-proposals/discussions/733
+
+React DevTools
+  Components inspector and performance profiler that let's you debug the React component hierarchy within your app.
+  @website: https://reactnative.dev/docs/react-devtools
+
+Element Inspector
+  The inspector lets you tap on any UI element in the app and see information about it.
+  @website: https://reactnative.dev/docs/react-devtools#integration-with-the-element-inspector
+
+LogBox
+  Displays console errors and console warnings as the overlay inside your app.
+  @website: https://reactnative.dev/docs/debugging#logbox
+
+Performance Monitor
+  Displays performance overlay inside your app. Inspect RAM consumption, UI and JS threads FPS and number of views mounted.
+  @website: https://reactnative.dev/docs/performance
+
+Flipper
+  Cross-platform debugging tool for mobile apps. Visualize, inspect, and control your apps from a desktop interface, with extensibility via plugins.
+  @author: [@facebook](https://github.com/facebook)
+  @website: https://fbflipper.com/
+  @github: https://github.com/facebook/flipper
+
+  @side websites
+    - https://fbflipper.com/docs/getting-started/react-native
+    - https://reactnative.dev/docs/debugging?js-debugger=flipper#opening-the-debugger
+
+Reactotron
+  A desktop app for inspecting your React JS and React Native projects. macOS, Linux, and Windows.
+  @author: [@infinitered](https://github.com/infinitered)
+  @website: https://docs.infinite.red/reactotron/
+  @github: https://github.com/infinitered/reactotron
+
+Expo Dev tools plugins
+  Available for Expo Development builds of your app. Add debugging features on top of installed libraries.
+  @website: https://docs.expo.dev/debugging/devtools-plugins
+  @github: https://github.com/expo/dev-plugins
+  @author: [@expo](https://github.com/expo)
+
+react-native-performance
+  Toolchain to measure and monitor the performance of your React Native app in development, pipeline and in production.
+  @author: [@oblador](https://github.com/oblador)
+  @github: https://github.com/oblador/react-native-performance
+
+Flashlight
+  Lighthouse for Mobile - audits your app and gives a performance score to your Android apps.
+  @website: https://flashlight.dev/
+  @author: [@bamlab](https://github.com/bamlab)
+  @github: https://github.com/bamlab/flashlight
+
+`react-native-flipper-performance-monitor`
+  An attempt to have a lighthouse for React Native. Flipper plugin to show a graph of the React Native performance monitor.
+  @author: [@bamlab](https://github.com/bamlab)
+  @github: https://github.com/bamlab/react-native-flipper-performance-monitor
+
+Native debugging (Xcode / Android Studio)
+  @website: https://developer.android.com/studio/debug
+  @website: https://developer.apple.com/documentation/xcode/debugging
+
+Native profiling (Xcode, Android Studio)
+  @website: https://developer.android.com/studio/profile
+  @website: https://developer.apple.com/documentation/xcode/performance-and-metrics
+
+Other debugging and profiling tools
   - Other answers (freeform)
 
-### Problems - debugging tools
+### Debugging and profiling pain points
 
-What problems have you run into? Check all that apply
+What pain points have you encountered with debugging and profiling in your React Native projects? If applicable, point out the specific solution and its problems.
 
-- Connecting debugger to app - Flipper
-- Connecting debugger to app - Chrome DevTools (Expo)
-- Connecting debugger to app - Chrome DevTools (Hermes)
-- Connecting debugger to app - React DevTools
-- Native debugging (Xcode, Android Studio)
-- Picking the right debugging tool
-- Unclear docs
-- No issues
-- Other problems - debugging tools
-  > **(_separate question below_)**
-  - Other answers (freeform)
+> **(_freeform input_)**
+````
 
-### JavaScript debugging features (Chrome DevTools)
-
-Which Chrome DevTools features do you use (across current React Native debugging tools and/or for web development)? Check all that apply
-
-- Console panel (console logs)
-- Console panel (executing statements)
-- Sources panel (breakpoints)
-- Sources panel (editing files)
-- Performance panel (CPU profiler)
-- Memory panel (memory profiler)
-- Network panel
-- React DevTools
-- Elements panel (DOM)
-- Elements panel (styles)
-- Network panel (network throttling)
-- Lighthouse
-- Recorder
-- Third-party plugins
-- Other problems - JavaScript debugging features (Chrome DevTools)
-  > **(_separate question below_)**
-  - Other answers (freeform)
-
-### Problems - JavaScript debugging
-
-What problems have you run into? Check all that apply
-
-- Breakpoints not working
-- Source maps not working
-- Debugger disconnecting
-- Crashes (debugger)
-- Crashes (application)
-- No issues
-- Other problems - JavaScript debugging
-  > **(_separate question below_)**
-  - Other answers (freeform)
-
-### Performance profiling
-
-What tools do you use to profile React Native app performance? Check all that apply
-
-- Flashlight
-- Flipper
-- React Native Flipper Performance Plugin
-- React Native Performance
-- React Native Performance Monitor
-- Native profiling (Xcode, Android Studio)
-- Other performance profiling tools
-  > **(_separate question below_)**
-  - Other answers (freeform)
+```diff
+- ### Debugging tools
+-
+- What tools do you use to debug your React Native apps? Check all that apply
+-
+- > **(_multiselect checkbox_)**
+-
+- - Chrome DevTools (in-browser - Remote JS debugging)
+- - Chrome DevTools (Expo)
+- - Chrome DevTools (Hermes)
+- - Console logs
+- - Flipper
+- - Reactotron
+- - React DevTools
+- - React Native Debugger
+- - Native debugging (Xcode / Android Studio)
+- - Other debugging tools
+- - > **(_separate question below_)**
+-   - Other answers (freeform)
+-
+- ### Problems - debugging tools
+-
+- What problems have you run into? Check all that apply
+-
+- - Connecting debugger to app - Flipper
+- - Connecting debugger to app - Chrome DevTools (Expo)
+- - Connecting debugger to app - Chrome DevTools (Hermes)
+- - Connecting debugger to app - React DevTools
+- - Native debugging (Xcode, Android Studio)
+- - Picking the right debugging tool
+- - Unclear docs
+- - No issues
+- - Other problems - debugging tools
+-   > **(_separate question below_)**
+-   - Other answers (freeform)
+-
+- ### JavaScript debugging features (Chrome DevTools)
+-
+- Which Chrome DevTools features do you use (across current React Native debugging tools and/or for web development)? Check all that apply
+-
+- - Console panel (console logs)
+- - Console panel (executing statements)
+- - Sources panel (breakpoints)
+- - Sources panel (editing files)
+- - Performance panel (CPU profiler)
+- - Memory panel (memory profiler)
+- - Network panel
+- - React DevTools
+- - Elements panel (DOM)
+- - Elements panel (styles)
+- - Network panel (network throttling)
+- - Lighthouse
+- - Recorder
+- - Third-party plugins
+- - Other problems - JavaScript debugging features (Chrome DevTools)
+-   > **(_separate question below_)**
+-   - Other answers (freeform)
+-
+- ### Problems - JavaScript debugging
+-
+- What problems have you run into? Check all that apply
+-
+- - Breakpoints not working
+- - Source maps not working
+- - Debugger disconnecting
+- - Crashes (debugger)
+- - Crashes (application)
+- - No issues
+- - Other problems - JavaScript debugging
+-   > **(_separate question below_)**
+-   - Other answers (freeform)
+-
+- ### Performance profiling
+-
+- What tools do you use to profile React Native app performance? Check all that apply
+-
+- - Flashlight
+- - Flipper
+- - React Native Flipper Performance Plugin
+- - React Native Performance
+- - React Native Performance Monitor
+- - Native profiling (Xcode, Android Studio)
+- - Other performance profiling tools
+-   > **(_separate question below_)**
+-   - Other answers (freeform)
+```
 
 ---
 
@@ -683,16 +1019,39 @@ Check all that apply
 
 > **(_multiselect checkbox_)**
 
-- Amplify Analytics
-- Amplitude
-- AppCenter Analytics
-- AppsFlyer
-- Firebase Analytics
-- Mixpanel
-- Segment
-- Other analytics solutions
+```diff
+Amplify Analytics
++ @website: https://docs.amplify.aws/react-native/
+
+Amplitude
++ @website: https://amplitude.com/
+
+AppCenter Analytics
++ @website: https://learn.microsoft.com/en-us/appcenter/sdk/getting-started/react-native
+
+AppsFlyer
++ @website: https://www.appsflyer.com/
+
+Firebase Analytics
++ @website: https://firebase.google.com/products/analytics
+
+Mixpanel
++ @website: https://mixpanel.com/
+
+Segment
++ @website: https://segment.com/
+
+Other analytics solutions
   > **(_separate question below_)**
   - Other answers (freeform)
+
++ ### Analytics pain points
+
++ What pain points have you encountered with analytics in your React Native projects? If applicable, point out the specific solution and its problems.
+
+> **(_freeform input_)**
+
+```
 
 ### Crash reporting
 
@@ -700,16 +1059,39 @@ Check all that apply
 
 > **(_multiselect checkbox_)**
 
-- AppCenter Crashes
-- Bugsnag
-- Datadog
-- Firebase Crashlytics
-- Instabug
-- New Relic
-- Sentry
-- Other crash reporting solutions
+```diff
+AppCenter Crashes
++ @website: https://learn.microsoft.com/en-us/appcenter/sdk/crashes/react-native
+
+Bugsnag
++ @website: https://www.bugsnag.com/
+
+Datadog
++ @website: https://www.datadoghq.com/
+
+Firebase Crashlytics
++ @website: https://firebase.google.com/products/crashlytics
+
+Instabug
++ @website: https://instabug.com/
+
+New Relic
++ @website: https://newrelic.com/
+
+Sentry
++ @website: https://sentry.io/
+
+Other crash reporting solutions
   > **(_separate question below_)**
   - Other answers (freeform)
+
++ ### Crash reporting pain points
+
++ What pain points have you encountered with crash reporting in your React Native projects? If applicable, point out the specific solution and its problems.
+
+> **(_freeform input_)**
+
+```
 
 ### Data visualisation
 
@@ -717,13 +1099,35 @@ Check all that apply
 
 > **(_multiselect checkbox_)**
 
-- React Native Charts Kit
-- react-native-svg (by Software Mansion)
-- Recharts
-- Victory Native (by Formidable)
-- Other data visualisation solutions
+```diff
+`react-native-chart-kit`
++ @github: https://github.com/indiespirit/react-native-chart-kit
++ @author: [@indiespirit](https://github.com/indiespirit)
+
+`react-native-svg`
++ @github: https://github.com/software-mansion/react-native-svg
++ @author: [@software-mansion](https://github.com/software-mansion)
+
+Recharts
++ @website: https://recharts.org/en-US/
++ @github: https://github.com/recharts/recharts
+
+`victory-native`
++ @website: https://formidable.com/open-source/victory-native/
++ @github: https://github.com/FormidableLabs/victory-native
++ @author: [@FormidableLabs](https://github.com/FormidableLabs)
+
+Other data visualisation solutions
   > **(_separate question below_)**
   - Other answers (freeform)
+
++ ### Data visualisation pain points
+
++ What pain points have you encountered with data visualisation in your React Native projects? If applicable, point out the specific solution and its problems.
+
+> **(_freeform input_)**
+
+```
 
 ### Storage
 
@@ -731,16 +1135,47 @@ Check all that apply
 
 > **(_multiselect checkbox_)**
 
-- Expo SQLite
-- React Native Async Storage
-- react-native-mmkv (by Marc Rousavy)
-- react-native-mmkv-storage (by Ammar Ahmed)
-- React Native SQLite Storage (by Andrzej Porebski)
-- Realm (by MongoDB)
-- WatermelonDB (by Nozbe)
-- Other storage solutions
+```diff
+Expo SQLite
++ @website: https://docs.expo.dev/versions/latest/sdk/sqlite/
++ @author: [@expo](https://github.com/expo)
+
+React Native Async Storage
++ @github: https://github.com/react-native-async-storage/async-storage
+
+`react-native-mmkv`
++ @github: https://github.com/mrousavy/react-native-mmkv
++ @author: [@mrousavy](https://github.com/mrousavy)
+
+`react-native-mmkv-storage`
++ @github: https://github.com/ammarahm-ed/react-native-mmkv-storage
++ @author: [@ammarahm-ed](https://github.com/ammarahm-ed)
+
+`react-native-sqlite-storage`
++ @github: https://github.com/andpor/react-native-sqlite-storage
++ @author: [@andpor](https://github.com/andpor)
+
+Realm
++ @website: https://realm.io/
++ @github: https://github.com/realm/realm-js
++ @author: [@MongoDB](https://www.mongodb.com/)
+
+WatermelonDB
++ @website: https://watermelondb.dev
++ @github: https://github.com/Nozbe/WatermelonDB
++ @author: [@Nozbe](https://github.com/Nozbe)
+
+Other storage solutions
   > **(_separate question below_)**
   - Other answers (freeform)
+
++ ### Storage pain points
+
++ What pain points have you encountered with storage in your React Native projects? If applicable, point out the specific solution and its problems.
+
+> **(_freeform input_)**
+
+```
 
 ### Testing
 
@@ -748,15 +1183,48 @@ Check all that apply
 
 > **(_multiselect checkbox_)**
 
-- Appium
-- Detox
-- Jest
-- Maestro
-- React Native Testing Library
-- Storybook
-- Other testing solutions
+```diff
+Appium
++ @website: https://appium.io/
++ @github: https://github.com/appium/appium
++ @author: [@appium](https://github.com/appium)
+
+Detox
++ @website: https://github.com/wix/Detox
++ @github: https://github.com/wix/Detox
++ @author: [@wix](https://github.com/wix)
+
+Jest
++ @website: https://jestjs.io/
++ @github: https://github.com/jestjs/jest
++ @author: [@OpenJSFoundation](https://openjsf.org/)
+
+Maestro
++ @website: https://maestro.mobile.dev/
++ @github: https://github.com/mobile-dev-inc/maestro
++ @author: [@mobile-dev-inc](https://github.com/mobile-dev-inc)
+
+React Native Testing Library
++ @website: https://callstack.github.io/react-native-testing-library/
++ @github: https://github.com/callstack/react-native-testing-library
++ @author: [@callstack](https://github.com/callstack)
+
+Storybook
++ @website: https://storybook.js.org/
++ @github: https://github.com/storybookjs/react-native
++ @author: [@storybookjs](https://github.com/storybookjs)
+
+Other testing solutions
   > **(_separate question below_)**
   - Other answers (freeform)
+
++ ### Testing pain points
+
++ What pain points have you encountered with testing in your React Native projects? If applicable, point out the specific solution and its problems.
+
+> **(_freeform input_)**
+
+```
 
 ### Other popular libraries
 
@@ -767,24 +1235,90 @@ Check all that apply
 > [!WARNING]
 > TODO: sort the available options
 
-- @expo/vector-icons
-- @gorhom/bottom-sheet (by Mo Gorhom)
-- @shopify/flash-list
-- expo-image
-- i18next
-- react-native-camera
-- react-native-fast-image
-- react-native-gesture-handler (by Software Mansion)
-- react-native-localize (by Mathieu Acthernoene)
-- react-native-maps
-- react-native-safe-area-context
-- react-native-webview
-- react-native-vector-icons
-- react-native-video
-- react-native-vision-camera (by Marc Rousavy)
-- Other popular libraries not listed above
+```diff
+@expo/vector-icons
++ @website: https://docs.expo.dev/guides/icons/
++ @github: https://github.com/expo/vector-icons
++ @author: [@expo](https://github.com/expo)
+
+@gorhom/bottom-sheet
++ @website: https://gorhom.github.io/react-native-bottom-sheet/
++ @github: https://github.com/gorhom/react-native-bottom-sheet
++ @author: [@gorhom](https://github.com/gorhom)
+
+@shopify/flash-list
++ @website: https://shopify.github.io/flash-list/
++ @github: https://github.com/shopify/flash-list
++ @author: [@shopify](https://github.com/shopify)
+
+expo-image
++ @website: https://docs.expo.dev/versions/latest/sdk/image/
++ @github: https://github.com/expo/expo/tree/master/packages/expo-image
++ @author: [@expo](https://github.com/expo)
+
+i18next
++ @website: https://react.i18next.com/
++ @github: https://github.com/i18next/react-i18next
++ @author: [@i18next](https://github.com/i18next)
+
+react-native-camera
++ @website: https://react-native-camera.github.io/react-native-camera/
++ @github: https://github.com/react-native-camera/react-native-camera
+
+react-native-fast-image
++ @github: https://github.com/DylanVann/react-native-fast-image
++ @author: [@DylanVann](https://github.com/DylanVann)
+
+react-native-gesture-handler
++ @website: https://software-mansion.github.io/react-native-gesture-handler/
++ @github: https://github.com/software-mansion/react-native-gesture-handler
++ @author: [@software-mansion](https://github.com/software-mansion)
+
+react-native-localize
++ @website: https://github.com/zoontek/react-native-localize
++ @author: [@zoontek](https://github.com/zoontek)
+
+react-native-maps
++ @github: https://github.com/react-native-maps/react-native-maps
+
+react-native-safe-area-context
++ @github: https://github.com/th3rdwave/react-native-safe-area-context
++ @author: [@th3rdwave](https://github.com/th3rdwave)
+
+react-native-vector-icons
++ @website: https://oblador.github.io/react-native-vector-icons/
++ @github: https://github.com/oblador/react-native-vector-icons
++ @author: [@oblador](https://github.com/oblador)
+
+react-native-video
++ @website: https://thewidlarzgroup.github.io/react-native-video/
++ @github: https://github.com/react-native-video/react-native-video
++ @author: [@thewidlarzgroup](https://github.com/thewidlarzgroup)
+
+react-native-webview
++ @github: https://github.com/react-native-webview/react-native-webview
++ @author: [@react-native-webview](https://github.com/react-native-webview)
+
+react-native-vision-camera
++ @website: https://react-native-vision-camera.com/
++ @github: https://github.com/mrousavy/react-native-vision-camera
++ @author: [@mrousavy](https://github.com/mrousavy)
+
++ formik
++ @website: https://formik.org/
++ @github: https://github.com/jaredpalmer/formik
++ @author: [@jaredpalmer](https://github.com/jaredpalmer)
+
++ react-hook-form
++ @website: https://react-hook-form.com/
++ @github: https://github.com/react-hook-form/react-hook-form
++ @author: [@react-hook-form](https://github.com/react-hook-form)
+
+
+Other popular libraries not listed above
   > **(_separate question below_)**
   - Other answers (freeform)
+```
 
 ### 🤷 / ✅ / 🚫 / 👍 / 👎 questions
 
@@ -804,19 +1338,24 @@ Which version do you use mainly?
 
 > **(_radio buttons_)**
 
-- nightly
-- next
-- 0.73
-- 0.72
-- 0.71
-- 0.70
-- 0.69
-- 0.68
-- 0.67
-- 0.66
-- 0.65
-- 0.64
-- 0.63 or lower
+```
+nightly
+next
++ 0.76
++ 0.75
++ 0.74
+0.73
+0.72
+0.71
+0.70
+0.69
+0.68
+0.67
+0.66
+0.65
+0.64
+0.63 or lower
+```
 
 ### React Native version upgrade strategy
 
@@ -901,16 +1440,45 @@ How do you build and submit your app for the App Store or Google Play?
 
 > **(_radio buttons_)**
 
-- App Center
-- Bitrise
-- EAS Build
-- EAS Submit
-- Fastlane
-- Manually with Android Studio
-- Manually with Xcode
-- Other ways to build app and submit for the App Store or Google Play
+```diff
+App Center
++ @website: https://appcenter.ms/
++ @github: https://github.com/microsoft/appcenter
++ @author: [@microsoft](https://github.com/microsoft)
+
+Bitrise
++ @website: https://www.bitrise.io/
++ @github: https://github.com/bitrise-io/bitrise
++ @author: [@bitrise-io](https://github.com/bitrise-io)
+
+EAS Build
++ @website: https://docs.expo.dev/build/introduction/
++ @author: [@expo](https://github.com/expo)
+
+EAS Submit
++ @website: https://docs.expo.dev/submit/introduction/
++ @author: [@expo](https://github.com/expo)
+
+Fastlane
++ @website: https://fastlane.tools/
++ @github: https://github.com/fastlane/fastlane
++ @author: [@fastlane](https://github.com/fastlane)
+
+Manually with Android Studio
+
+Manually with Xcode
+
+Other ways to build app and submit for the App Store or Google Play
   > **(_separate question below_)**
   - Other answers (freeform)
+
++ ### Deployment pain points
+
++ What pain points have you encountered with deployment in your React Native projects? If applicable, point out the specific solution and its problems.
+
+> **(_freeform input_)**
+
+```
 
 ---
 
@@ -1010,22 +1578,25 @@ What methods do you use to learn and improve your React Native skills? Check all
 
 > **(_multiselect checkbox_)**
 
-- Books
-- Coding bootcamp
-- Expo docs
-- Mentoring
-- Official React Native docs
-- On-the-job training
-- Online courses (free)
-- Online courses (paid)
-- Podcasts
-- React Native Directory
-- School / higher education
-- Self-directed learning
-- Videos
-- Other learning methods
+```diff
+Books
+Coding bootcamp
+Expo docs
+Mentoring
+Official React Native docs
+On-the-job training
+Online courses (free)
+Online courses (paid)
+Podcasts
+React Native Directory
+School / higher education
+Self-directed learning
+Videos
++ X platform
+Other learning methods
   > **(_separate question below_)**
   - Other answers (freeform)
+```
 
 ### Blogs & magizines
 
@@ -1033,21 +1604,47 @@ What blogs, magazines or newsletters do you consult to keep up with React Native
 
 > **(_multiselect checkbox_)**
 
-- Callstack blog <!-- https://www.callstack.com/blog -->
-- DEV Community (dev.to) <!-- https://dev.to/t/reactnative -->
-- Expo blog (Exposition) <!-- https://blog.expo.dev/ -->
-- Kent C. Dodds <!-- https://kentcdodds.com/blog -->
-- LogRocket <!-- https://blog.logrocket.com/ -->
-- Medium <!-- https://medium.com/tag/react-native -->
-- Microsoft React Native Blog <!-- https://devblogs.microsoft.com/react-native/ -->
-- r/reactnative <!-- https://www.reddit.com/r/reactnative/ -->
-- React Native blog <!-- https://reactnative.dev/blog -->
-- React Native Newsletter (by Infinite Red) <!-- https://reactnativenewsletter.com/ -->
-- Software Mansion blog <!-- https://blog.swmansion.com/ -->
-- This Week In React (by Sébastien Lorber) <!-- https://thisweekinreact.com/ -->
-- Other blogs, magazines or newsletters
+```diff
+Callstack blog
++ @website: https://www.callstack.com/blog
+
+DEV Community (dev.to)
++ @website: https://dev.to/t/reactnative
+
+Expo blog (Exposition)
++ @website: https://blog.expo.dev/
+
+Kent C. Dodds
++ @website: https://kentcdodds.com/blog
+
+LogRocket
++ @website: https://blog.logrocket.com/
+
+Medium
++ @website: https://medium.com/tag/react-native
+
+Microsoft React Native Blog
++ @website: https://devblogs.microsoft.com/react-native/
+
+r/reactnative
++ @website: https://www.reddit.com/r/reactnative/
+
+React Native blog
++ @website: https://reactnative.dev/blog
+
+React Native Newsletter (by Infinite Red)
++ @website: https://reactnativenewsletter.com/
+
+Software Mansion blog
++ @website: https://blog.swmansion.com/
+
+This Week In React (by Sébastien Lorber)
++ @website: https://thisweekinreact.com/
+
+Other blogs, magazines or newsletters
   > **(_separate question below_)**
   - What other blogs, magazines or newsletters not listed above do you read? Write all that apply (freeform)
+```
 
 ### Sites & courses
 
@@ -1055,44 +1652,101 @@ What sites or courses do you consult to learn React Native? Check all that apply
 
 > **(_multiselect checkbox_)**
 
-> [!WARNING]
-> TODO: add React docs!
+```diff
+Animate React Native (by Catalin Miron)
++ @website: https://www.animatereactnative.com/
++ @author: [@cm_ro](https://github.com/cm-ro)
 
-- Animate React Native (by Catalin Miron) <!-- https://www.animatereactnative.com/ -->
-- Codecademy <!-- https://www.codecademy.com/ -->
-- Developer Training (by Callstack) <!-- https://www.callstack.com/products/developer-training -->
-- Egghead.io <!-- https://egghead.io/ -->
-- Epic React (by Kent C. Dodds) <!-- https://epicreact.dev/ -->
-- Expo docs <!-- https://docs.expo.dev/ -->
-- Frontend Masters <!-- https://frontendmasters.com/ -->
-- Medium
-<!-- - React docs <!-- https://react.dev/ -->
-- React Native docs <!-- https://reactnative.dev/ -->
-- Reddit
-- Stack Overflow
-- Start React Native (by William Candillon) <!-- https://start-react-native.dev/ -->
-- Solito docs
-- Udemy
-- The Ultimate Guide to React Native Optimization (by Callstack)
-- X (Twitter)
-- YouTube
-- Other sites or courses
+Codecademy
++ @website: https://www.codecademy.com/
+
+Developer Training (by Callstack) <!-- https://www.callstack.com/products/developer-training -->
++ @website: https://www.callstack.com/products/developer-training
++ @author: [@callstack](https://github.com/callstack)
+
+Egghead.io
++ @website: https://egghead.io/
+
+Epic React (by Kent C. Dodds)
++ @website: https://epicreact.dev/
++ @author: [@kentcdodds](https://github.com/kentcdodds)
+
+Expo docs
++ @website: https://docs.expo.dev/
++ @author: [@expo](https://github.com/expo)
+
+Frontend Masters
++ @website: https://frontendmasters.com/
+
+Medium
++ @website: https://medium.com/
+
+React docs
++ @website: https://react.dev/
+
+React Native docs
++ @website: https://reactnative.dev/
+
+Reddit
++ @website: https://www.reddit.com/
+
+Stack Overflow
++ @website: https://stackoverflow.com/
+
+Start React Native
++ @website: https://start-react-native.dev/
++ @author: [@wcandillon](https://github.com/wcandillon)
+
+Solito docs
++ @website: https://solito.dev/
++ @author: [@nandorojo](https://github.com/nandorojo)
+
+Udemy
++ @website: https://www.udemy.com/
+
+The Ultimate Guide to React Native Optimizatio
++ @website: https://www.callstack.com/blog/the-ultimate-guide-to-react-native-optimization
++ @author: [@callstack](https://github.com/callstack)
+
+X (Twitter)
++ @website: https://x.com/
+
+YouTube
++ @website: https://www.youtube.com/
+
+Other sites or courses
   > **(_separate question below_)**
   - What other sites, courses or book not listed above do you consult to learn React Native? Write all that apply (freeform)
+```
 
 ### Podcasts
 
 What podcasts about React Native or programming in general do you listen to? Check all that apply
 
-- PodRocker (by LogRocket) <!-- https://podrocket.logrocket.com/
-- React Native Radio (by Infinite Red) <!-- https://reactnativeradio.com/
-- Rocket Ship (by Simon Grimm)
-- Syntax.fm <!-- https://syntax.fm/
-- The Changelog <!-- https://changelog.com/
-- The React Native Show Podcast (by Callstack) <!-- https://www.callstack.com/podcast
-- Other answers (freeform)
+```diff
+PodRocker
++ @website: https://podrocket.logrocket.com/
++ @author: [@logrocket](https://github.com/logrocket)
+
+React Native Radio
++ @website: https://reactnativeradio.com/
++ @author: [@infinitered](https://github.com/infinitered)
+
+Rocket Ship
++ @website: https://syntax.fm/
++ @author: [@saimon24](https://github.com/saimon24)
+
+The Changelog
++ @website: https://changelog.com/
+
+React Universe On Air (former The React Native Show Podcast)
++ @website: https://www.callstack.com/podcast
++ @author: [@callstack](https://github.com/callstack)
+
+Other answers (freeform)
   > **(_separate question below_)**
   > What other React Native or general programming-related podcasts not listed above do you listen to? Write all that apply (freeform)
+```
 
 ### Video creators
 
@@ -1111,19 +1765,43 @@ What other developer surveys do you participate in? Check all that apply
 > [!WARNING]
 > TODO: add State of HTML
 
-- CodinGame Developer Survey
-- Design Tools Survey
-- Jamstack Community Survey
-- JetBrains State of Developer Ecosystem
-- Postman State of the API Report
-- Stack Overflow Annual Developer Survey
-- State of CSS
-- State of JS
-- State of GraphQL
-- State of React
-- Other surveys not mentioned above
+```diff
+- CodinGame Developer Survey // too niche
+
+Design Tools Survey
++ @website: https://uxtools.co/survey/2023/
+
+Jamstack Community Survey
++ @website: https://jamstack.org/survey/
+
+JetBrains State of Developer Ecosystem
++ @website: https://www.jetbrains.com/lp/devecosystem-2023/
+
+Postman State of the API Report
++ @website: https://www.postman.com/state-of-api/
+
+Stack Overflow Annual Developer Survey
++ @website: https://survey.stackoverflow.co/
+
+State of CSS
++ @website: https://stateofcss.com/
+
+State of JavaScript
++ @website: https://stateofjs.com/
+
+State of GraphQL
++ @website: https://stateofgraphql.com/
+
+State of React
++ @website: https://stateofreact.com/
+
++ State of HTML
++ @website: https://stateofhtml.com/
+
+Other surveys not mentioned above
   > **(_separate question below_)**
   - Other answers (freeform)
+```
 
 ---
 
